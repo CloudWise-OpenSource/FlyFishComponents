@@ -1,0 +1,30 @@
+.dv-component-container {
+  .ff-component-button-wrap {
+    &.one {
+      background: url(./assets/button.svg) top left / contain no-repeat;
+    }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    padding: 0 18px;
+  }
+  .ff-component-button {
+    display: block;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 2.25;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    > * {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

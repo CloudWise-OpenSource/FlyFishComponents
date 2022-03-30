@@ -1,0 +1,76 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "饼图",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "dataSources": [
+    {
+      "name": "model-16",
+      "type": "http",
+      "options": {
+        "apiSuccessCode": "200",
+        "getDataField": "data",
+        "interval": 0,
+        "method": "GET",
+        "url": "http://10.2.3.56:8360/openAPI/model/getModelData",
+        "vars": "{\n  \"model_id\": 16\n}",
+        "headers": {
+          "Authorization": "f77ab8f512518ba7f98e5e45782227ab"
+        }
+      }
+    },
+    {
+      "name": "yapi-model-16",
+      "type": "http",
+      "options": {
+        "apiSuccessCode": 0,
+        "interval": 0,
+        "method": "GET",
+        "url": "http://10.2.2.49:3000/mock/358/data/16"
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "PieChart",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 200,
+        "width": 800,
+        "height": 700,
+        "name": "基础饼图",
+        "index": 0
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"data\":[{\"value\":500,\"name\":\"搜索引擎\"},{\"value\":250,\"name\":\"直接访问\"},{\"value\":125,\"name\":\"邮件营销\"},{\"value\":125,\"name\":\"联盟广告\"}]}"
+        }
+      }
+    }
+  ],
+  "id": "61aa27abd39bdf74f6d60100",
+  "category": "16385412150180",
+  "subCategory": "163859366900307",
+  "devSubCategory": "163858927358702",
+  "devCategory": "16385412150180",
+  "componentName": "基础饼图",
+  "prodVer": "v1.0.4",
+  "devVer": "V1.0.1",
+  "devId": "61b09560161c8c1698dbf770",
+  "demoVer": "V1.0.0",
+  "demoId": "61e95b5cd7e4a058de605f72",
+  "doma:dev:category": "16427348954130",
+  "doma:dev:subCategory": "164299947517408",
+  "doma:dev:ver": "V1.0.1",
+  "doma:dev:id": "61ee558c6b32ca67577d1d72"
+}

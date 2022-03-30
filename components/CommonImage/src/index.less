@@ -1,0 +1,55 @@
+@keyframes pulse {
+  from {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+
+  50% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+}
+
+.breath {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+.scale {
+  animation-name: zoomIn;
+  animation-timing-function: ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  transform: rotate(360deg);
+  animation-name: rotate;
+  animation-timing-function: linear;
+}

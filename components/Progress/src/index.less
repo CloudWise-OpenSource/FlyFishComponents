@@ -1,0 +1,106 @@
+@prefix: ff-component-progress;
+@base-index: 10;
+
+.transformCenter(@left: 50%, @translateX: -50%) {
+  position: absolute;
+  top: 50%;
+  left: @left;
+  transform: translate(@translateX, -50%);
+}
+
+.@{prefix} {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+  color: #60bdff;
+  font-weight: 500;
+  transition: all 0.3s;
+  font-family: PingFangSC-Medium, PingFang SC;
+  flex-wrap: wrap;
+
+  &-fill {
+    height: 100%;
+  }
+
+  &-bar {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    transition: all 0.3s;
+
+    &-inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      transition: all 0.3s;
+      background: white;
+      z-index: @base-index;
+    }
+
+    &-shadow {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s;
+      z-index: @base-index - 1;
+    }
+  }
+
+  &-title {
+    margin-right: 20px;
+
+    &-top {
+      width: 100% !important;
+      margin-bottom: 6px;
+    }
+
+    &-bottom {
+      width: 100% !important;
+      order: 3;
+    }
+
+    &-right {
+      order: 3;
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &-number {
+    position: relative;
+    z-index: @base-index * 2;
+    color: white;
+    transition: all 0.3s;
+    &-right,
+    &-after {
+      margin-left: 6px;
+    }
+
+    &-inner {
+      .transformCenter();
+      &-left {
+        .transformCenter(2%, 0);
+      }
+    }
+
+    &-after {
+      .transformCenter(0, 0);
+    }
+  }
+
+  &-modal {
+    .anticon::before {
+      display: none !important;
+    }
+  }
+
+  &-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

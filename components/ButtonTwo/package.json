@@ -1,0 +1,16 @@
+{
+  "name": "ButtonTwo",
+  "version": "v1.0.0",
+  "description": "",
+  "dependencies": {
+    "@cloudwise-fe/chart-panel": "1.5.8",
+    "antd": "4.16.12",
+    "less": "2.7.3"
+  },
+  "scripts": {
+    "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",
+    "build-production": "NODE_ENV=production ../../node_modules/.bin/webpack --config ./build/webpack.config.production.js",
+    "build-template:dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./template/webpack.config.dev.js",
+    "build-template:production": "NODE_ENV=production ../../node_modules/.bin/webpack --config ./template/webpack.config.production.js"
+  }
+}
