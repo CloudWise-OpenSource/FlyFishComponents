@@ -1,8 +1,8 @@
 {
-    "compName":"象形图",
+    "compName":"PictorialBarChart",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "template",
+    "description": "象形图",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }

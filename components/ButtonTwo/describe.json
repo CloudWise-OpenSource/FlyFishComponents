@@ -1,8 +1,8 @@
 {
-    "compName":"按钮二",
+    "compName":"ButtonTwo",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "template",
+    "description": "按钮二",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }

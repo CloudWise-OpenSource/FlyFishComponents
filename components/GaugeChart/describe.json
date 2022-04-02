@@ -1,8 +1,8 @@
 {
-    "compName":"基础仪表盘",
+    "compName":"GaugeChart",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "template",
+    "description": "基础仪表盘",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }

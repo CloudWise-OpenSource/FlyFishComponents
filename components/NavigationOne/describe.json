@@ -1,8 +1,8 @@
 {
-    "compName":"导航一",
+    "compName":"NavigationOne",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "template",
+    "description": "导航一",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }

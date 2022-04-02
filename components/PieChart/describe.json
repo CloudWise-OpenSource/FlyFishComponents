@@ -1,8 +1,8 @@
 {
-    "compName":"基础饼图",
+    "compName":"PieChart",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "template",
+    "description": "基础饼图",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }
