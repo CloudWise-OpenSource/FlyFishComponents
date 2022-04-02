@@ -2,7 +2,7 @@
     "compName":"ButtonOne",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "按钮一",
+    "description": "组件：按钮一",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }

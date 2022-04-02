@@ -2,7 +2,7 @@
     "compName":"MapChart",
     "compType": "public",
     "contributor": "cloudwise",
-    "description": "地理地图",
+    "description": "组件：地理地图",
     "iconUrl": "thumbnail/icon.png",
     "publicTime": "2022-03-28"
 }
