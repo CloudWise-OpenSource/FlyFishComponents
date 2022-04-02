@@ -64,14 +64,16 @@ Component1 // 组件名称目录
 ### 联系小助手
 当您的PR已经被merge后，请扫描下方二维码联系小助手，我们为您准备了社区礼品，感谢您的贡献，同时，如果您有意向，我们将邀请您成为FlyFish核心开发者。FlyFish的壮大离不开像您这样具有开源精神的开发者。
 
-<img src="https://gitee.com/CloudWise/fly-fish/raw/main/doc/images/Susie.png" width="550px"/>
+![image](./docs/imgs/FlyFishWeChart.png)
 
 ### 您可能关心的问题
 ###### Q：组件提交后在哪呈现？上面会有我的什么信息？
-###### A：组件提交后，我们将通过CI/CD的方式，定期更新到FlyFish模版中心，模版中心的组件将展示如下信息
+A：组件提交后，我们将通过CI/CD的方式，定期更新到FlyFish模版中心，模版中心的组件将展示如下信息
 -  组件名称
 -  组件贡献者
 -  组件描述
 -  贡献时间
+##### Q: FlyFish模板中心在哪里？
+ - A: [FlyFish模板中心](https://www.cloudwise.ai/flyFishComponents.html)
 
 
