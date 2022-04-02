@@ -67,13 +67,33 @@ Component1 // 组件名称目录
 <img src="./docs/imgs/FlyFishWeChart.png" width="460px">
 
 ### 您可能关心的问题
-###### Q：组件提交后在哪呈现？上面会有我的什么信息？
+#### Q：组件提交后在哪呈现？上面会有我的什么信息？
 A：组件提交后，我们将通过CI/CD的方式，定期更新到FlyFish模版中心，模版中心的组件将展示如下信息
 -  组件名称
 -  组件贡献者
 -  组件描述
 -  贡献时间
-##### Q: FlyFish模板中心在哪里？
- - A: [FlyFish模板中心](https://www.cloudwise.ai/flyFishComponents.html)
+
+#### Q: FlyFish模板中心在哪里？
+A: [FlyFish模板中心](https://www.cloudwise.ai/flyFishComponents.html)
+
+
+
+#### Q: 当前FlyFishComponents库里的组件，我要如何使用起来?
+
+A: 按照如下步骤来使用组件
+
+- 确保新开发组件main.js中通过registerComponent注册的组件名和当前组件名一致，然后整个组件压缩为zip
+
+- 到组件开发平台 -> 可视化组件 -> 新增组件（组件名为通过registerComponent注册的组件名）
+
+- 点击上传源码按钮，选中组件包上传
+
+- 点击导出组件，下载组件编译包
+
+- 上传编译包至数据应用平台，数据应用平台-> 可视化组件 -> 添加组件 -> 上传编译包
+
+- 大屏即可正常使用该组件
+
 
 
