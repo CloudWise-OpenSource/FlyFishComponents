@@ -64,7 +64,7 @@ Component1 // 组件名称目录
 ### 联系小助手
 当您的PR已经被merge后，请扫描下方二维码联系小助手，我们为您准备了社区礼品，感谢您的贡献，同时，如果您有意向，我们将邀请您成为FlyFish核心开发者。FlyFish的壮大离不开像您这样具有开源精神的开发者。
 
-![image](./docs/imgs/FlyFishWeChart.png)
+<img src="./docs/imgs/FlyFishWeChart.png" width="460px">
 
 ### 您可能关心的问题
 ###### Q：组件提交后在哪呈现？上面会有我的什么信息？
