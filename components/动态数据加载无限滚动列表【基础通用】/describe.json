@@ -1,0 +1,8 @@
+{
+    "compName":"VirtualiInfiniteScrollList",
+    "compType": "public",
+    "contributor": "cloudwise",
+    "description": "组件：动态数据加载无限滚动列表",
+    "iconUrl": "thumbnail/icon.png",
+    "publicTime": "2022-03-28"
+}

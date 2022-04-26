@@ -1,0 +1,8 @@
+{
+    "compName":"VideoFlow",
+    "compType": "public",
+    "contributor": "cloudwise",
+    "description": "组件：视频扩展",
+    "iconUrl": "thumbnail/icon.png",
+    "publicTime": "2022-03-28"
+}
