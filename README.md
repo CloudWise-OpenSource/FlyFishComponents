@@ -82,21 +82,22 @@ A: [FlyFish模板中心](https://www.cloudwise.ai/flyFishComponents.html)
 #### Q: 当前FlyFishComponents库里的组件，我要如何使用起来?
 
 A: 按照如下步骤来使用组件
+> 下载
+```bash
+
 git clone ${私有组件仓库地址}
 
 ```
 > 制作上传组件压缩包
 ```bash
-
 ### 切换组件仓库到main分支
 git checkout main
 
 ### 压缩组件
 zip -q -r ${组件id}.zip ${组件id}
+
 ```
 > 上传组件包到开发平台
 ```bash
 应用创建 -> 组件开发 -> 操作选项 -> 导入源码
-
-
-
+```
