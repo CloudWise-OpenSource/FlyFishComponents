@@ -50,8 +50,8 @@ Component1 // 组件名称目录
  - https://gitee.com/Cloudwise/fly-fish
 
 #### 部署流程：
- - [FlyFish2.0部署文档 GitHub](https://github.com/CloudWise-OpenSource/FlyFish/tree/2.0/doc) 
- - [FlyFish2.0部署文档 Gitee](https://gitee.com/CLoudwise/fly-fish/tree/2.0/doc) 
+ - [FlyFish2.1部署文档 GitHub](https://github.com/CloudWise-OpenSource/FlyFish/tree/main/doc) 
+ - [FlyFish2.1部署文档 Gitee](https://gitee.com/CloudWise/fly-fish/tree/main/doc) 
 
 ### 组件开发规范
 组件开发规范文档可以帮助您在进行组件开发过程中减少一些常见错误，在您正式开发组件前，请一定要阅读此文档。
