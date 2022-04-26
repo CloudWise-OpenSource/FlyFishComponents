@@ -82,7 +82,7 @@ A: [FlyFish模板中心](https://www.cloudwise.ai/flyFishComponents.html)
 #### Q: 当前FlyFishComponents库里的组件，我要如何使用起来?
 
 A: 按照如下步骤来使用组件
-> 下载
+> clone fork后的私有组件仓库
 ```bash
 
 git clone ${私有组件仓库地址}
