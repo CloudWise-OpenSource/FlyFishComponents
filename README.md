@@ -83,17 +83,19 @@ A: [FlyFish模板中心](https://www.cloudwise.ai/flyFishComponents.html)
 
 A: 按照如下步骤来使用组件
 
-- 确保新开发组件main.js中通过registerComponent注册的组件名和当前组件名一致，然后整个组件压缩为zip
+```bash
+### fork代码仓库
+fork https://github.com/CloudWise-OpenSource/FlyFishComponents.git仓库 => ${私有组件仓库地址}
+```
 
-- 到组件开发平台 -> 可视化组件 -> 新增组件（组件名为通过registerComponent注册的组件名）
+```bash
+### 组件导出
+应用创建 -> 组件开发 -> 操作选项 -> 导出源码
 
-- 点击上传源码按钮，选中组件包上传
+### 代码提交
+组件解压后放入到${私有组件仓库地址}进行提交，提交PR即可
 
-- 点击导出组件，下载组件编译包
-
-- 上传编译包至数据应用平台，数据应用平台-> 可视化组件 -> 添加组件 -> 上传编译包
-
-- 大屏即可正常使用该组件
+```
 
 
 
