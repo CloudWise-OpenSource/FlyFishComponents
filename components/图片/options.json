@@ -1,0 +1,44 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "本地测试大屏",
+    "scaleMode": "origin",
+    "backgroundColor": "#162C51",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [
+    {
+      "name": "sayHello",
+      "body": "console.log('hello '+name)",
+      "args": "name"
+    }
+  ],
+  "components": [
+    {
+      "type": "61aa27abd39bdf74f6d60142",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 242,
+        "width": 883,
+        "height": 645,
+        "index": 0,
+        "name": "图片",
+        "visible": true,
+        "class": ""
+      }
+    }
+  ],
+  "id": "61aa27abd39bdf74f6d60142",
+  "category": "16385412150180",
+  "subCategory": "1638593819821011",
+  "devSubCategory": "163876204982300",
+  "devCategory": "16385412150180",
+  "componentName": "图片",
+  "prodVer": "v1.0.0",
+  "devVer": "V1.0.2",
+  "devId": "61b08520e99031169fa33059"
+}

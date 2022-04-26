@@ -1,0 +1,44 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "本地测试大屏",
+    "scaleMode": "origin",
+    "backgroundColor": "#162C51",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "components": [
+    {
+      "type": "61b08a137f8cf51699105fa3",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 280,
+        "index": 0,
+        "name": "导航一",
+        "visible": true,
+        "class": ""
+      },
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": ""
+        }
+      }
+    }
+  ],
+  "id": "61aa27acd39bdf74f6d602d7",
+  "category": "16385412150180",
+  "subCategory": "1638594460833013",
+  "devSubCategory": "163876204982300",
+  "devCategory": "16385412150180",
+  "componentName": "导航一",
+  "prodVer": "v1.0.0",
+  "devVer": "V1.0.0",
+  "devId": "61b08a137f8cf51699105fa3"
+}
