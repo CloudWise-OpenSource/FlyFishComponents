@@ -188,7 +188,6 @@ export default class Component extends ReactComponent {
 		weekAddon: defaultWeekAddon,
 		gutter: defaultGutter,
 		style: {},
-		fontFamily:defaultFamily,
 		fontColor:'#fff',
 		finalFormatTime: String(defaultFinalFormatTime),
 	}

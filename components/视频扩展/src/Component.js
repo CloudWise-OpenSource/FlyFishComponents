@@ -1,67 +1,82 @@
+import ReactComponent from 'data-vi/ReactComponent'
+import PropTypes from 'prop-types'
+import NavigationOne from './NavigationOne'
 
-import Component from "data-vi/Component";
+export default class Component extends ReactComponent {
+	static propTypes = {
+		/**
+		 * @description 文本内容（支持HTML格式，支持XML格式写法）
+		 * @default: ""
+		 */
+		text: PropTypes.string,
+		/**
+		 * @description 是否在新窗口打开
+		 * @default: true
+		 */
+		color: PropTypes.string,
+		/**
+		 * @description 文本大小
+		 * @default: 26
+		 */
+		fontSize: PropTypes.number,
+		/**
+		 * @description 文本字体
+		 * @default: default
+		 */
+		fontFamily: PropTypes.string,
+		/**
+		 * @description 文本粗细
+		 * @default: 400
+		 */
+		fontWeight: PropTypes.string,
+		/**
+		 * @description 水平排列
+		 * @default: flex-start
+		 */
+		justifyContent: PropTypes.string,
+		/**
+		 * @description 垂直排列
+		 * @default: flex-start
+		 */
+		alignItems: PropTypes.string,
+		/**
+		 * @description 自定义样式
+		 * @default: ''
+		 */
+		style: PropTypes.string,
+	}
+	static enableLoadCssFile = true
+	// 默认选项
+	static defaultOptions = {
+		text: '我的导航',
+		color: '#fff',
+		fontSize: 40,
+		fontFamily: 'inherit',
+		fontWeight: 400,
+		justifyContent: 'center',
+		alignItems: 'top',
+		style: '',
+		backgroundTop: 0,
+		top: 0,
+	}
 
-export default class VideoFlow extends Component {
-    // 默认配置
-    static defaultConfig = {};
-    // 默认选项
-    static defaultOptions = {};
-    // 系统事件
-    static events = {};
-    // 是否加载css文件 如当前组件没有样式文件，设置为false
-    static enableLoadCssFile = false;
+	getDefaultConfig() {
+		return {
+			left: 0,
+			top: 0,
+			width: 1920,
+			height: 280,
+			visible: true,
+		}
+	}
 
-    // 获取默认选项
-    getDefaultOptions() {
-      return this.constructor.defaultOptions;
-    }
+	getDefaultData() {
+		return {
+			data: {},
+		}
+	}
 
-    // 获取默认事件
-    getDefaultData() {
-      return [];
-    }
-
-    /**
-     * 钩子方法 组件实例化时调用
-     */
-    _construct() {
-      
-    }
-
-    /**
-     * 钩子方法 组件mount挂载时调用
-     */
-    _mount() {
-      const container = this.getContainer();
-      container.html("Hello FlyFish !");
-      container.css({color: "#FFF"});
-    }
-
-    /**
-     * 钩子方法 组件渲染时调用
-     */
-    _render() {
-        
-    }
-
-    /**
-     * 钩子方法 组件更新时调用
-     */
-    _update() {
-      // 默认调用render方法
-      this._render();
-    }
-
-    /**
-     * 钩子方法 渲染数据时调用
-     */
-    _draw() {
-      
-    }
-
-    /**
-     * 钩子方法 组件mount卸载时调用
-     */
-    _unMount() {}
+	getReactComponent() {
+		return NavigationOne
+	}
 }
-
