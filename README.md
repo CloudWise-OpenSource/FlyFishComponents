@@ -94,7 +94,8 @@ git clone ${私有组件仓库地址}
 git checkout main
 
 ### 压缩组件
-zip -q -r ${组件id}.zip ${组件id}
+zip -q -r ${组件文件夹名称}.zip ${组件文件夹名称}
+例如： zip -q -r 导航.zip 导航
 
 ```
 > 上传组件包到开发平台
