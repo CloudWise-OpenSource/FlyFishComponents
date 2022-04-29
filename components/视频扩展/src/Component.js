@@ -1,82 +1,105 @@
 import ReactComponent from 'data-vi/ReactComponent'
 import PropTypes from 'prop-types'
-import NavigationOne from './NavigationOne'
+import React, { useMemo, memo, useEffect, useRef } from 'react'
+import { Empty } from 'antd'
+import 'antd/lib/empty/style/index.css'
+import { transformImageUrl } from 'data-vi/helpers'
+import './index.less'
+
+const Video = memo(({ data, videoUrl, controls, autoPlay, loop, parent }) => {
+  const videoSourceUrl = useMemo(() => {
+    if (data && data.videoUrl && data.videoUrl.length) {
+      return data.videoUrl
+    }
+    return transformImageUrl(videoUrl)
+  }, [data, videoUrl])
+
+  const ref = useRef();
+  useEffect(() => {
+    parent.bind('playOrPauseVideo', () => {
+      const myVideo = ref.current;
+      if (myVideo) {
+        if (myVideo.paused)
+          myVideo.play();
+        else
+          myVideo.pause();
+      }
+    });
+    parent.bind('reNew', () => {
+      const myVideo = ref.current;
+      if (myVideo) {
+        myVideo.currentTime = 0
+        myVideo.play();
+      }
+    });
+  }, [])
+
+  return (
+    <div className={`ff-component-video-flow-wrapper${videoSourceUrl ? '' : ' ff-component-video-flow-wrapper-background'}`}>
+      {!videoSourceUrl ? (
+        <Empty description="当前无视频源, 请检查!" />
+      ) : (
+        <video
+          ref={ref}
+          className="ff-component-video-flow"
+          controls={controls}
+          autoPlay={autoPlay}
+          loop={loop}
+          src={videoSourceUrl}
+        />
+      )}
+    </div>
+  )
+})
+
+Video.propTypes = {
+  /**
+   * @description 视频地址
+   * @default null
+   */
+  videoUrl: PropTypes.string,
+  /**
+   * @description 自动播放
+   * @default false
+   */
+  autoPlay: PropTypes.bool,
+  /**
+   * @description 显示控制
+   * @default true
+   */
+  controls: PropTypes.bool,
+  /**
+   * @description 循环
+   * @default false
+   */
+  loop: PropTypes.bool,
+}
 
 export default class Component extends ReactComponent {
-	static propTypes = {
-		/**
-		 * @description 文本内容（支持HTML格式，支持XML格式写法）
-		 * @default: ""
-		 */
-		text: PropTypes.string,
-		/**
-		 * @description 是否在新窗口打开
-		 * @default: true
-		 */
-		color: PropTypes.string,
-		/**
-		 * @description 文本大小
-		 * @default: 26
-		 */
-		fontSize: PropTypes.number,
-		/**
-		 * @description 文本字体
-		 * @default: default
-		 */
-		fontFamily: PropTypes.string,
-		/**
-		 * @description 文本粗细
-		 * @default: 400
-		 */
-		fontWeight: PropTypes.string,
-		/**
-		 * @description 水平排列
-		 * @default: flex-start
-		 */
-		justifyContent: PropTypes.string,
-		/**
-		 * @description 垂直排列
-		 * @default: flex-start
-		 */
-		alignItems: PropTypes.string,
-		/**
-		 * @description 自定义样式
-		 * @default: ''
-		 */
-		style: PropTypes.string,
-	}
-	static enableLoadCssFile = true
-	// 默认选项
-	static defaultOptions = {
-		text: '我的导航',
-		color: '#fff',
-		fontSize: 40,
-		fontFamily: 'inherit',
-		fontWeight: 400,
-		justifyContent: 'center',
-		alignItems: 'top',
-		style: '',
-		backgroundTop: 0,
-		top: 0,
-	}
+  static enableLoadCssFile = true
+  // 默认选项
+  static defaultOptions = {
+    videoUrl: null,
+    autoPlay: false,
+    controls: true,
+    loop: false,
+  }
 
-	getDefaultConfig() {
-		return {
-			left: 0,
-			top: 0,
-			width: 1920,
-			height: 280,
-			visible: true,
-		}
-	}
+  getDefaultConfig() {
+    return {
+      left: 534,
+      top: 200,
+      width: 1000,
+      height: 700,
+      visible: true,
+    }
+  }
 
-	getDefaultData() {
-		return {
-			data: {},
-		}
-	}
+  getDefaultData() {
+    return { videoUrl: '' }
+  }
 
-	getReactComponent() {
-		return NavigationOne
-	}
+  getReactComponent() {
+    return Video
+  }
 }

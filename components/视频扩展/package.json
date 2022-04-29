@@ -1,10 +1,10 @@
 {
-  "name": "NavigationOne",
+  "name": "VideoFlow",
   "version": "v1.0.0",
   "description": "",
   "dependencies": {
     "@cloudwise-fe/chart-panel": "1.5.13",
-    "less": "2.7.3"
+    "antd": "4.16.12"
   },
   "scripts": {
     "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",
