@@ -3,7 +3,7 @@
   "version": "v1.0.0",
   "description": "",
   "dependencies": {
-    "@cloudwise-fe/chart-panel": "1.4.2",
+    "@cloudwise-fe/chart-panel": "1.5.13",
     "antd": "4.16.12",
     "dayjs": "^1.10.7"
   },
