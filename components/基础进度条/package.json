@@ -4,7 +4,7 @@
   "description": "",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@cloudwise-fe/chart-panel": "1.5.5",
+    "@cloudwise-fe/chart-panel": "1.5.13",
     "antd": "4.16.12",
     "classnames": "^2.3.1"
   },
