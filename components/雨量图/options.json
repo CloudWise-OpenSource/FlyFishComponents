@@ -1,0 +1,30 @@
+{
+    "options": {
+        "width": 1920,
+        "height": 1080,
+        "name": "雨量图",
+        "scaleMode": "cover",
+        "backgroundColor": "#162C51",
+        "backgroundImage": "",
+        "css": ""
+    },
+    "events": [
+    ],
+    "functions": [],
+    "components": [
+        {
+            "type": "6273ac7c988a433c0cb93db9",
+            "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+            "config": {
+                "left": 534,
+                "top": 242,
+                "width": 883,
+                "height": 645,
+                "index": 0,
+                "name": "rainfall",
+                "visible": true,
+                "class": ""
+            }
+        }
+    ]
+}
