@@ -6,7 +6,7 @@ export const initOption = {
     left: 'center'
   },
   grid: {
-    bottom: 80
+    bottom: 80 
   },
   toolbox: {
     feature: {
