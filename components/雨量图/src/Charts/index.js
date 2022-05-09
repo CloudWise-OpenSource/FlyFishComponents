@@ -15,7 +15,7 @@ export const initOption = {
       },
       restore: {},
       saveAsImage: {}
-    }
+    } 
   },
   tooltip: {
     trigger: 'axis',
