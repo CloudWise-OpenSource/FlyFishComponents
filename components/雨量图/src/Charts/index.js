@@ -10,7 +10,7 @@ export const initOption = {
   },
   toolbox: {
     feature: {
-      dataZoom: {
+      dataZoom: { 
         yAxisIndex: 'none'
       },
       restore: {},
