@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * @description 注册6273ac7c988a433c0cb93db9组件的设置面板
+ * @description 注册627b5d68988a433c0cb98381组件的设置面板
  */
 import {
   registerComponentEvents,
@@ -13,5 +13,5 @@ import {
 import DataSetting from "./settings/data";
 import OptionsSetting from "./settings/options";
 
-registerComponentOptionsSetting("6273ac7c988a433c0cb93db9", "v-current", OptionsSetting);
-registerComponentDataSetting("6273ac7c988a433c0cb93db9", "v-current", DataSetting);
+registerComponentOptionsSetting("627b5d68988a433c0cb98381", "v-current", OptionsSetting);
+registerComponentDataSetting("627b5d68988a433c0cb98381", "v-current", DataSetting);

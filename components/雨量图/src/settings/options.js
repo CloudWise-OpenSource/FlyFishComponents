@@ -39,6 +39,12 @@ export default class OptionsSetting extends ComponentOptionsSetting {
             <FormItem label='背景颜色'>
               <ColorPickerInput value={options.tooltip.backgroundColor} onChange={backgroundColor=>updateOptions({tooltip:{...options.tooltip,backgroundColor}})} ></ColorPickerInput>
             </FormItem>
+            <FormItem label='宽度'>
+              <InputNumber style={{width:'100%'}} value={options.tooltip.width} onChange={width=>updateOptions({tooltip:{...options.tooltip,width}})}></InputNumber>
+            </FormItem>
+            <FormItem label='高度'>
+              <InputNumber style={{width:'100%'}} value={options.tooltip.height} onChange={height=>updateOptions({tooltip:{...options.tooltip,height}})}></InputNumber>
+            </FormItem>
           </Form>
         )
       },

@@ -43,15 +43,16 @@ const Rainfall = (props)=>{
     if(data.xAxis) option.xAxis[0].data = data.xAxis
     if(data.data&&data.data[1]&&data.data[1].data) option.series[0].data = data.data[1].data
     if(data.data&&data.data[0]&&data.data[0].data) option.series[1].data = data.data[0].data
-
+    // 合并series
     _.merge(option.series,series)
-
-    option.tooltip.axisPointer.label.backgroundColor = tooltip.backgroundColor
-
+    // 合并tooltip
+    tooltip.extraCssText = `width:${tooltip.width}px;height:${tooltip.height}px`
+    _.merge(option.tooltip,tooltip)
+    //合并x/y轴
     _.merge(option.xAxis[0],xAxis)
     _.merge(option.yAxis[0],yAxis)
     _.merge(option.yAxis[1],yAxis)
-    console.log(legend);
+    // 合并图例
     _.merge(option.legend,legend)
     return option
   }
@@ -66,7 +67,6 @@ export default class Test extends ReactComponent {
   static defaultOptions = {
     series:[{areaStyle:{},lineStyle:{}},{areaStyle:{},lineStyle:{}}],
     tooltip:{
-      backgroundColor:'#505765'
     },
     xAxis:{
       axisLabel:{},

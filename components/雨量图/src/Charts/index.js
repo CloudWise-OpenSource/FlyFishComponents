@@ -26,7 +26,6 @@ export const initOption = {
         backgroundColor: '#505765'
       },
     },
-    
   },
   legend: {
     data: ['Flow', 'Rainfall'],
