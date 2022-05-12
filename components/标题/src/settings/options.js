@@ -199,7 +199,7 @@ export default class OptionsSetting extends ComponentOptionsSetting {
           <FormItem label="链接地址">
             <Input
               placeholder="请输入点击跳转Url"
-              value={}
+              value={hrefUrl}
               onChange={(event) =>
                 this.setState({ hrefUrl: event.target.value })
               }
