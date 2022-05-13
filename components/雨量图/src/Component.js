@@ -38,11 +38,10 @@ const Rainfall = (props)=>{
     chart.current.setOption(option,true)
   }
   const mergeData = () => {
-    // if(Array.isArray(data)&&!data.length) return initOption;
     const option = initOption
     if(data.xAxis) option.xAxis[0].data = data.xAxis
-    if(data.data&&data.data[1]&&data.data[1].data) option.series[0].data = data.data[1].data
-    if(data.data&&data.data[0]&&data.data[0].data) option.series[1].data = data.data[0].data
+    if(data.flow) option.series[0].data = data.flow
+    if(data.rainfall) option.series[1].data = data.rainfall
     // 合并series
     _.merge(option.series,series)
     // 合并tooltip
@@ -65,19 +64,60 @@ export default class Test extends ReactComponent {
   static defaultConfig = {};
   // 默认选项
   static defaultOptions = {
-    series:[{areaStyle:{},lineStyle:{}},{areaStyle:{},lineStyle:{}}],
+    series:[{
+      areaStyle:{
+        color:'#5470c6'
+      },
+      lineStyle:{
+        color:'#5470c6'
+      }},
+      {
+        areaStyle:{
+          color:'#91cc75'
+        },
+        lineStyle:{
+          color:'#91cc75'
+        }
+    }],
     tooltip:{
+      backgroundColor:'#9B9B9B',
+      width:150,
+      height:90
     },
     xAxis:{
-      axisLabel:{},
-      axisLine:{lineStyle:{}}
+      axisLabel:{
+        color:'#9B9B9B',
+        fontSize:12,
+        fontWeight:400
+      },
+      axisLine:{
+        lineStyle:{
+          width:1,
+          color:'#333',
+
+        }
+      }
     },
     yAxis:{
-      axisLabel:{},
-      axisLine:{lineStyle:{}}
+      axisLabel:{
+        color:'#9B9B9B',
+        fontSize:12,
+        fontWeight:400
+      },
+      axisLine:{
+        lineStyle:{
+          width:1,
+          color:'#333',
+        }
+      }
     },
     legend:{
-      textStyle:{}
+      left:10,
+      textStyle:{
+        color:'#9B9B9B',
+        fontSize:12,
+        fontWeight:400
+      }
     }
   };
   // 系统事件
@@ -94,7 +134,7 @@ export default class Test extends ReactComponent {
 
   // 获取默认事件
   getDefaultData() {
-    return {xAxis:["10:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"],data:[{name:"降水量",data:[99,80,110,40,60,147,120,90,80,150,140,110]},{name:"流速",data:[0.5,0.5,1.5,8.5,7.5,11.5,10.5,11.5,8.5,9.5,10.5,7.5]}]};
+    return {xAxis:["10:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"],flow:[99,80,110,40,60,147,120,90,80,150,140,110],rainfall:[0.5,0.5,1.5,8.5,7.5,11.5,10.5,11.5,8.5,9.5,10.5,7.5]};
   }
 
   getReactComponent() {

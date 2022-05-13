@@ -13,8 +13,9 @@ import {
 } from 'datavi-editor/templates';
 import _ from 'lodash'
 import './option.css'
+
 export default class OptionsSetting extends ComponentOptionsSetting {
-    
+  
   getTabs() {
     const {options={},updateOptions} = this.props
     
@@ -24,10 +25,10 @@ export default class OptionsSetting extends ComponentOptionsSetting {
         content:()=>(
           <Form>
             <FormItem label='流速颜色'>
-              <ColorPickerInput value={options.series[0].areaStyle.color} onChange={color=>updateOptions({series:_.merge(options.series,[{areaStyle:{color},lineStyle:{color}}])})} ></ColorPickerInput>
+              <ColorPickerInput value={options.series[0].areaStyle.color} onChange={color=>updateOptions({series:_.merge(options.series,[{areaStyle:{color},lineStyle:{color},itemStyle:{color}}])})} ></ColorPickerInput>
             </FormItem>
             <FormItem label='降水量颜色'>
-              <ColorPickerInput value={options.series[1].areaStyle.color} onChange={color=>updateOptions({series:_.merge(options.series,[{},{areaStyle:{color},lineStyle:{color}}])})} ></ColorPickerInput>
+              <ColorPickerInput value={options.series[1].areaStyle.color} onChange={color=>updateOptions({series:_.merge(options.series,[{},{areaStyle:{color},lineStyle:{color},itemStyle:{color}}])})} ></ColorPickerInput>
             </FormItem>
           </Form>
         )
@@ -90,16 +91,16 @@ export default class OptionsSetting extends ComponentOptionsSetting {
         content:()=>(
           <Form>
             <FormItem label='上距离'>
-              <InputNumber value={options.legend.top} onChange={top=>{console.log(top);updateOptions({legend:{...options.legend,top}})}} ></InputNumber>
+              <InputNumber style={{width:'100%'}} value={options.legend.top}  onChange={top=>{console.log(top);updateOptions({legend:{...options.legend,top}})}} ></InputNumber>
             </FormItem>
             <FormItem label='下距离'>
-              <InputNumber value={options.legend.bottom} onChange={bottom=>updateOptions({legend:{...options.legend,bottom}})} ></InputNumber>
+              <InputNumber style={{width:'100%'}} value={options.legend.bottom} onChange={bottom=>updateOptions({legend:{...options.legend,bottom}})} ></InputNumber>
             </FormItem>
             <FormItem label='左距离'>
-              <InputNumber value={options.legend.left} onChange={left=>updateOptions({legend:{...options.legend,left}})} ></InputNumber>
+              <InputNumber style={{width:'100%'}} value={options.legend.left} onChange={left=>updateOptions({legend:{...options.legend,left}})} ></InputNumber>
             </FormItem>
             <FormItem label='右距离'>
-              <InputNumber value={options.legend.right} onChange={right=>updateOptions({legend:{...options.legend,right}})} ></InputNumber>
+              <InputNumber style={{width:'100%'}} value={options.legend.right} onChange={right=>updateOptions({legend:{...options.legend,right}})} ></InputNumber>
             </FormItem>
             <FormItem label='字体颜色'>
               <ColorPickerInput value={options.legend.textStyle.color} onChange={color=>updateOptions({legend:_.merge(options.legend,{textStyle:{color}})})} ></ColorPickerInput>
