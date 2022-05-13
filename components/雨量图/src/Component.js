@@ -112,7 +112,10 @@ export default class Test extends ReactComponent {
       }
     },
     legend:{
+      top:'auto',
+      bottom:'auto',
       left:10,
+      right:'auto',
       textStyle:{
         color:'#9B9B9B',
         fontSize:12,

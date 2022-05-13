@@ -91,19 +91,19 @@ export default class OptionsSetting extends ComponentOptionsSetting {
         content:()=>(
           <Form>
             <FormItem label='上距离'>
-              <InputNumber style={{width:'100%'}} value={options.legend.top}  onChange={top=>{console.log(top);updateOptions({legend:{...options.legend,top}})}} ></InputNumber>
+              <Input style={{width:'100%'}} value={options.legend.top}  onChange={e=>{updateOptions({legend:{...options.legend,top:e.target.value}})}}></Input>
             </FormItem>
             <FormItem label='下距离'>
-              <InputNumber style={{width:'100%'}} value={options.legend.bottom} onChange={bottom=>updateOptions({legend:{...options.legend,bottom}})} ></InputNumber>
+              <Input style={{width:'100%'}} value={options.legend.bottom} onChange={e=>updateOptions({legend:{...options.legend,bottom:e.target.value}})} ></Input>
             </FormItem>
             <FormItem label='左距离'>
-              <InputNumber style={{width:'100%'}} value={options.legend.left} onChange={left=>updateOptions({legend:{...options.legend,left}})} ></InputNumber>
+              <Input style={{width:'100%'}} value={options.legend.left} onChange={e=>updateOptions({legend:{...options.legend,left:e.target.value}})} ></Input>
             </FormItem>
             <FormItem label='右距离'>
-              <InputNumber style={{width:'100%'}} value={options.legend.right} onChange={right=>updateOptions({legend:{...options.legend,right}})} ></InputNumber>
+              <Input style={{width:'100%'}} value={options.legend.right} onChange={e=>updateOptions({legend:{...options.legend,right:e.target.value}})} ></Input>
             </FormItem>
             <FormItem label='字体颜色'>
-              <ColorPickerInput value={options.legend.textStyle.color} onChange={color=>updateOptions({legend:_.merge(options.legend,{textStyle:{color}})})} ></ColorPickerInput>
+              <ColorPickerInput value={options.legend.textStyle.color} onChange={e=>updateOptions({legend:_.merge(options.legend,{textStyle:{color:e.target.value}})})} ></ColorPickerInput>
             </FormItem>
             <FormItem label='字体大小'>
               <InputNumber style={{width:'100%'}} value={options.legend.textStyle.fontSize} onChange={fontSize=>updateOptions({legend:_.merge(options.legend,{textStyle:{fontSize}})})} ></InputNumber>
