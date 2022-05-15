@@ -80,7 +80,7 @@ export default class Test extends ReactComponent {
         }
     }],
     tooltip:{
-      backgroundColor:'#9B9B9B',
+      backgroundColor:'#FFFFFF',
       width:150,
       height:90
     },

@@ -103,7 +103,7 @@ export default class OptionsSetting extends ComponentOptionsSetting {
               <Input style={{width:'100%'}} value={options.legend.right} onChange={e=>updateOptions({legend:{...options.legend,right:e.target.value}})} ></Input>
             </FormItem>
             <FormItem label='字体颜色'>
-              <ColorPickerInput value={options.legend.textStyle.color} onChange={e=>updateOptions({legend:_.merge(options.legend,{textStyle:{color:e.target.value}})})} ></ColorPickerInput>
+              <ColorPickerInput value={options.legend.textStyle.color} onChange={color=>updateOptions({legend:_.merge(options.legend,{textStyle:{color}})})} ></ColorPickerInput>
             </FormItem>
             <FormItem label='字体大小'>
               <InputNumber style={{width:'100%'}} value={options.legend.textStyle.fontSize} onChange={fontSize=>updateOptions({legend:_.merge(options.legend,{textStyle:{fontSize}})})} ></InputNumber>
