@@ -1,0 +1,70 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "正负柱状图",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "dataSources": [
+    {
+      "name": "model-23",
+      "type": "http",
+      "options": {
+        "apiSuccessCode": 0,
+        "getDataField": "data",
+        "interval": 0,
+        "method": "GET",
+        "url": "http://10.2.3.56:8360/openAPI/model/getModelData",
+        "vars": "{\n  \"model_id\": 23\n}",
+        "headers": {
+          "Authorization": "author token"
+        }
+      }
+    },
+    {
+      "name": "yapi-model-23",
+      "type": "http",
+      "options": {
+        "apiSuccessCode": 0,
+        "interval": 0,
+        "method": "GET",
+        "url": "http://10.2.2.49:3000/mock/358/data/23"
+      }
+    }
+  ],
+  "events": [],
+  "functions": [],
+  "components": [
+    {
+      "type": "626b4131e6dcf01bc1ff6fad",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 200,
+        "width": 800,
+        "height": 700,
+        "index": 0,
+        "name": "正负柱状图"
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"yAxis\":[\"18-30岁\",\"31-45岁\",\"46-60岁\",\"61-75岁\",\"76-100岁\"],\"data\":[{\"name\":\"样例1\",\"data\":[20,90,120,70,55]},{\"name\":\"样例2\",\"data\":[20,90,120,70,55]}]}"
+        }
+      }
+    }
+  ],
+  "category": "16385412150180",
+  "subCategory": "163858927358702",
+  "devSubCategory": "163876204982300",
+  "devCategory": "16385412150180",
+  "componentName": "正负柱状图",
+  "prodVer": "V1.0.1",
+  "devVer": "V1.0.4",
+  "devId": "61b08cf49e604116c6898e6e",
+  "id": "626b4131e6dcf01bc1ff6fad"
+}

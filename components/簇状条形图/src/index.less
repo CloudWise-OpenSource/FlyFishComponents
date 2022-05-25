@@ -1,0 +1,49 @@
+@prefix: ff-component-stack-bar-chart-626b4131e6dcf01bc1ff6fad;
+
+.@{prefix} {
+  &-tooltip {
+    padding: 8px;
+    background: linear-gradient(
+      360deg,
+      #008192 0%,
+      rgba(69, 191, 248, 0.2) 100%
+    );
+    box-shadow: 0px 6px 12px 0px rgba(0, 18, 67, 0.7);
+    border-radius: 8px 8px 0px 0px;
+    font-size: 12px;
+    color: white;
+    line-height: 1;
+
+    &-wrapper {
+      // top: -100% !important;
+    }
+
+    &-title {
+      text-align: center;
+      margin: 0;
+    }
+
+    &-item {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > span {
+        color: #15f7fa;
+      }
+
+      > p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        i {
+          width: 8px;
+          height: 8px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}
