@@ -1,0 +1,15 @@
+{
+  "name": "629d9e81bb50b5204a0a701c",
+  "version": "v1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "echarts": "5.3.1",
+    "antd": "^4.20.2",
+    "@cloudwise-fe/chart-panel": "1.5.13"
+  },
+  "scripts": {
+    "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",
+    "build-production": "NODE_ENV=production ../../node_modules/.bin/webpack --config ./build/webpack.config.production.js"
+  }
+}
