@@ -1,0 +1,16 @@
+{
+  "name": "62afd877f8ed882065579b40",
+  "version": "v1.0.0",
+  "description": "",
+  "dependencies": {
+    "highcharts": "8.0.0",
+    "highcharts-react-official": "^3.1.0",
+    "antd": "^4.20.2",
+    "@cloudwise-fe/chart-panel": "1.5.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",
+    "build-production": "NODE_ENV=production ../../node_modules/.bin/webpack --config ./build/webpack.config.production.js"
+  }
+}
