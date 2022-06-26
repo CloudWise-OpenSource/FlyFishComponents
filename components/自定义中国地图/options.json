@@ -1,0 +1,46 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "自定义中国地图",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "dataSources": [],
+  "components": [
+    {
+      "type": "61efb44befcd191bc1bb4d19",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 434,
+        "top": 200,
+        "width": 932,
+        "height": 753,
+        "name": "自定义中国地图",
+        "index": 0
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "[{\"id\":1,\"name\":\"河南省\",\"value\":300,\"link\":3},{\"id\":2,\"name\":\"北京市\",\"value\":200,\"link\":6},{\"id\":3,\"name\":\"四川省\",\"value\":200,\"link\":6},{\"id\":4,\"name\":\"广东省\",\"value\":100,\"link\":3},{\"id\":5,\"name\":\"海南省\",\"value\":100,\"link\":6},{\"id\":6,\"name\":\"台湾省\",\"value\":100,\"link\":3}]"
+        }
+      }
+    }
+  ],
+  "category": "16427348954130",
+  "subCategory": "163858927358702",
+  "devSubCategory": "163858927358702",
+  "devCategory": "16385412150180",
+  "componentName": "自定义中国地图",
+  "prodVer": "V1.0.2",
+  "devVer": "V1.0.2",
+  "devId": "61d400435198a30c333c3e28",
+  "demoVer": "V1.0.0",
+  "doma:dev:ver": "V1.0.0",
+  "id": "61efb44befcd191bc1bb4d19"
+}
