@@ -1,0 +1,86 @@
+@keyframes svgRotate {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  50% {
+    opacity: 0.4;
+    transform: rotate(180deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+@keyframes svgRotateReverse {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+  50% {
+    opacity: 0.4;
+    transform: rotate(-180deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(-270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+@prefixCls: ff-components-total-62b84d1f26b32a2058aa815c; 
+.@{prefixCls}{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  background: url('./asset/centerBg.png') no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  > div {
+      position: absolute;
+  }
+  .centerSix{
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      clip-path: polygon(75% 9%, 99% 51%, 75% 94%, 25% 94%, 1% 51%, 25% 9%);
+  }
+  .centerBall{
+      width: 450px;
+      height: 450px;
+      background: url('./asset/limianBall.png') no-repeat;
+      background-size: 100% auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > div {
+          position: absolute;
+      }
+      > div:nth-child(1) {
+          background: url('./asset/centerRun.png') center no-repeat;
+          background-size: 75% auto;
+          animation: svgRotateReverse 8s linear infinite;
+      }
+      > div:nth-child(2) {
+          background: url('./asset/insideRun.png') center no-repeat;
+          background-size: 75% auto;
+          animation: svgRotate 8s linear infinite;
+      }
+  }
+}
