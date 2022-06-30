@@ -1,9 +1,11 @@
+import { merge } from "data-vi/helpers";
 import {
   FONTSTYLE,
   FONTWEIGHT,
   TITLELINKTARGET,
   LEGENDTYPE,
   LEGENDORIENT,
+  RADARSHAPE,
 } from "../constant";
 import { XAXISPOSITION } from "../constant/xAxis";
 import { YAXISPOSITION } from "../constant/yAxis";
@@ -15,195 +17,200 @@ import {
   AXISLINEJOIN,
 } from "../constant/batchAxis";
 import { TOOLTIPTIGGER } from "../constant/tooltip";
+import {
+  SYMBOL,
+  SYMBOLREPEATPOSITION,
+  SYMBOLPOSITION,
+} from "../constant/series";
 
 export const COLORS = [
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
-        offset: 1,
-        color: '#53F3FF',
+        offset: 0,
+        color: "rgba(149, 245, 208, 1)",
       },
       {
-        offset: 0,
-        color: 'rgba(83, 243, 255, 0)',
+        offset: 1,
+        color: "rgba(23, 213, 227, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
-        offset: 1,
-        color: '#5DAFFF',
+        offset: 0,
+        color: "rgba(87, 233, 252, 1)",
       },
       {
-        offset: 0,
-        color: 'rgba(93, 175, 255, 0)',
+        offset: 1,
+        color: "rgba(128, 69, 248, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
-        offset: 1,
-        color: '#6C93F9',
+        offset: 0,
+        color: "rgba(117, 220, 251, 1)",
       },
       {
-        offset: 0,
-        color: 'rgba(108, 147, 249, 0)',
+        offset: 1,
+        color: "rgba(13, 122, 228, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
-        offset: 1,
-        color: 'rgba(184, 142, 255, 1)',
+        offset: 0,
+        color: "rgba(128, 69, 248, 1)",
       },
       {
-        offset: 0,
-        color: 'rgba(184, 142, 255, 0)',
+        offset: 1,
+        color: "rgba(87, 233, 252, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
         offset: 0,
-        color: 'rgba(143, 78, 237, 0)',
+        color: "rgba(128, 69, 248, 1)",
       },
       {
         offset: 1,
-        color: 'rgba(143, 78, 237, 1)',
+        color: "rgba(87, 233, 252, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
         offset: 0,
-        color: 'rgba(184, 233, 134, 0)',
+        color: "rgba(0, 200, 129, 94)",
       },
       {
         offset: 1,
-        color: 'rgba(184, 233, 134, 1)',
+        color: "rgba(0, 200, 129, 94)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
+    type: "linear",
     x: 0,
-    y: 1,
+    y: 0,
     x2: 0,
-    y2: 0,
+    y2: 1,
     colorStops: [
       {
         offset: 0,
-        color: 'rgba(96, 183, 255, 0)',
+        color: "rgba(21, 250, 248, 1)",
       },
       {
         offset: 1,
-        color: 'rgba(96, 183, 255, 1)',
+        color: "rgba(21, 250, 248, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
-    x: 0,
-    y: 1,
+    type: "linear",
+    x: 1,
+    y: 0,
     x2: 0,
     y2: 0,
     colorStops: [
       {
         offset: 0,
-        color: 'rgba(255, 35, 102, 0)',
+        color: "rgba(128, 68, 244, 1)",
       },
       {
         offset: 1,
-        color: 'rgba(255, 35, 102, 1)',
+        color: "rgba(84, 243, 255, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
-    x: 0,
-    y: 1,
+    type: "linear",
+    x: 1,
+    y: 0,
     x2: 0,
     y2: 0,
     colorStops: [
       {
         offset: 0,
-        color: 'rgba(245, 166, 35, 0)',
+        color: "rgba(118, 221, 251, 1)",
       },
       {
         offset: 1,
-        color: 'rgba(245, 166, 35, 1)',
+        color: "rgba(10, 120, 227, 1)",
       },
     ],
     globalCoord: false,
   },
   {
-    type: 'linear',
-    x: 0,
-    y: 1,
+    type: "linear",
+    x: 1,
+    y: 0,
     x2: 0,
     y2: 0,
     colorStops: [
       {
         offset: 0,
-        color: 'rgba(0, 193, 255, 0)',
+        color: "rgba(31, 223, 233, 1)",
       },
       {
         offset: 1,
-        color: 'rgba(0, 193, 255, 1)',
+        color: "rgba(150, 250, 255, 1)",
       },
     ],
     globalCoord: false,
   },
-]
+];
 
 export const BACKGROUNDCOLOR = "#13183000";
 
 export const BORDERCOLOR = "rgba(0, 0, 0, 0.1)";
 
-export const FONTCOLOR = "#9AABBD";
+export const FONTCOLOR = "#9aabbd";
 
 export const FONTFAMILY = '"Helvetica Neue", "Helvetica", "Arial", sans-serif';
 
@@ -214,7 +221,7 @@ export const TOOLTIPTRIGGER = "axis";
 export const LEGENDPAGEICONCOLOR = "#aaa";
 
 export const LEGENDPAGEICONINACITVECOLOR = "#2f4554";
-
+export const LEDGENDPOSITION = "right";
 export const GRID = {
   top: "10%",
   bottom: "10%",
@@ -228,11 +235,13 @@ export const INITFONTSTYLE = {
   fontWeight: Object.keys(FONTWEIGHT)[0],
   fontFamily: "sans-serif",
   fontSize: 18,
+  textAlign: 'auto',
+  textVerticalAlign: 'auto',
   ...GRID,
 };
 
 export const AXISPOINTER = {
-  show: true,
+  show: false,
   type: 'line',
   triggerTooltip: true,
   triggerOn: 'mousemove|click'
@@ -254,28 +263,21 @@ export const RECT = {
 
 export const LEGEND = {
   show: true,
-  left: '50%',
-  top: '3%',
-  icon: 'circle',
-  itemGap: 15,
+  top: "1%",
+  // right: "10%",
+  left:'center',
   type: Object.keys(LEGENDTYPE)[0],
   orient: Object.keys(LEGENDORIENT)[0],
-}
+};
 
 export const TOOLTIP = {
   show: true,
   showContent: true,
   alwaysShowContent: false,
-  axisPointer: {
-    type: "line",
-    axis:'auto',
-    snap: true,
-    show: true, 
-  },
   confine: false,
   enterable: false,
   hideDelay: 100,
-  trigger: Object.keys(TOOLTIPTIGGER)[0],
+  trigger: Object.keys(TOOLTIPTIGGER)[1],
   triggerOn: 'mousemove|click'
 };
 
@@ -288,12 +290,7 @@ export const XAXIS = {
   axisLabel: {
     formatter: (value, index) => value,
   },
-  axisLine: {
-    lineStyle: {
-      color: "#394E6B"
-    }
-  }
-}
+};
 
 export const YAXIS = {
   show: true,
@@ -307,22 +304,10 @@ export const YAXIS = {
   splitLine: {
     show: true,
     lineStyle: {
-      color: ["#394E6B"],
+      color: ["#315070"],
     },
   },
-  axisPointer: {
-    show: false
-  }
-}
-
-export const FAKEYAXIS = {
-  show: true,
-  nameGap: 15,
-  nameLocation: Object.keys(AXISNAMELOCATIONTYPE)[0],
-  axisLabel: {
-    formatter: (value, index) => value + '%',
-  },
-}
+};
 
 export const LINESTYLE = {
   color: BORDERCOLOR,
@@ -332,6 +317,11 @@ export const LINESTYLE = {
   cap: Object.keys(AXISLINECAP)[0],
   join: Object.keys(AXISLINEJOIN)[0],
   miterLimit: 10,
+  opacity: 1,
+};
+
+export const AREASTYLE = {
+  color: BORDERCOLOR,
   opacity: 1,
 };
 
@@ -361,11 +351,109 @@ export const AXISLABELWITHOUTRECT = {
   ...INITFONTSTYLE,
 };
 
+export const SERIESLABEL = merge({}, AXISLABELWITHOUTRECT, { show: false });
+
 export const AXISLABEL = {
   ...AXISLABELWITHOUTRECT,
   ...RECT,
 };
 
+export const RADARSERIES = {
+  symbol: Object.keys(SYMBOL)[0],
+  symbolSize: 4,
+  symbolKeepAspect: false,
+  lineStyle: LINESTYLE,
+  areaStyle: AREASTYLE,
+};
+
+export const RADAR = {
+  radius: 75,
+  startAngle: 90,
+  splitNumber: 5,
+  scale: false,
+  shape: Object.keys(RADARSHAPE)[0],
+  axisTick: {
+    show: false,
+  },
+};
+
+export const RADARGRID = {
+  top: "50%",
+  left: "50%",
+  radius: "75%",
+};
+
+export const PICTORIALSERIES = {
+  ...RADARSERIES,
+  label: SERIESLABEL,
+  symbolSize: ["100%", "100%"],
+  symbolOffset: [0, 0],
+  symbolRepeat: false,
+  symbolRepeatDirection: Object.keys(SYMBOLREPEATPOSITION)[0],
+  symbolPosition: Object.keys(SYMBOLPOSITION)[0],
+  symbolClip: false,
+};
+
+export const GAUAGESPLIT = {
+  show: true,
+  length: 10,
+  distance: 10,
+};
+
+export const GAUGPOINTER = {
+  show: true,
+  offsetCenter: [0, 0],
+  length: "60%",
+  width: 6,
+  itemStyle: {
+    color: "auto",
+  },
+};
+
+export const GAUGELINESTYLE = {
+  show: true,
+  roundCap: false,
+  lineStyle: {
+    width: 10,
+  },
+};
+
+export const GUAGEPROGRESS = {
+  show: true,
+  overlap: true,
+  width: 10,
+  roundCap: false,
+  clip: false,
+};
+
+export const GAUAGESETTING = {
+  progress: GUAGEPROGRESS,
+  startAngle: 225,
+  endAngle: -45,
+  clockwise: true,
+  splitNumber: 10,
+};
+
+export const GAUGDETAILTITLE = {
+  show: true,
+  offsetCenter: [0, "20%"],
+};
+
+export const GEO = {
+  map: "China",
+  zoom: 1,
+  roam: false,
+  show: true,
+  silent: false,
+};
+
+export const MAPSERIES = {
+  label: {
+    show: false,
+    distance: 5,
+    fontSize: 12,
+  },
+};
 
 export const ANIMATION = {
   animation: true,

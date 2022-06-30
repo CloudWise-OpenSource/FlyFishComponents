@@ -16,8 +16,7 @@ export const LEGENDTYPE = {
 export const SERIESITEM = {
   string: 'String',
   number: 'Number',
-  object: 'Object',
-  array: 'Array'
+  object: 'Object'
 }
 
 /**
@@ -96,6 +95,11 @@ export const LINETEXTOVERFLOW = {
 export const LEGENDORIENT = {
   horizontal: '水平布局',
   vertical: '垂直布局'
+}
+
+export const RADARSHAPE = {
+  polygon: '多边形',
+  circle: '圆形'
 }
 
 export function USEINSTANCEFUNCTION(instance, eventBus) {}

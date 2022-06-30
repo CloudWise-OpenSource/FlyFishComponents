@@ -2,7 +2,7 @@
   "options": {
     "width": 1920,
     "height": 1080,
-    "name": "堆叠折线图",
+    "name": "柱状图",
     "scaleMode": "origin",
     "backgroundColor": "#0B1427",
     "backgroundImage": "",
@@ -39,32 +39,38 @@
   "functions": [],
   "components": [
     {
-      "type": "61cd32484a9f67d281d1062f",
+      "type": "62bd5820ea24a70e97a33ea8",
       "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
       "config": {
         "left": 534,
         "top": 200,
-        "width": 1000,
+        "width": 800,
         "height": 700,
         "index": 0,
-        "name": "堆叠折线图"
+        "name": "基础柱状图"
       },
       "options": {},
       "dataSource": {
         "type": "json",
         "options": {
-          "json": "{\"xAxis\":[\"1月\",\"2月\",\"3月\",\"4月\",\"5月\",\"6月\",\"7月\",\"8月\",\"9月\",\"10月\",\"11月\",\"12月\"],\"data\":[{\"name\":\"降水一\",\"data\":[99,80,110,40,60,147,120,90,80,150,140,110]},{\"name\":\"降水二\",\"data\":[50,55,110,80,70,110,100,110,80,90,100,70]},{\"name\":\"降水三\",\"data\":[110,150,60,100,120,20,10,40,10,90,60,90]},{\"name\":\"降水四\",\"data\":[50,10,30,70,20,100,50,80,110,60,80,40]}]}"
+          "json": "{\"xAxis\":[\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\",\"Sun\"],\"data\":[{\"name\":\"邮件营销\",\"data\":[120,132,101,134,90,230,210]},{\"name\":\"联盟广告\",\"data\":[220,182,191,234,290,330,310]},{\"name\":\"视频广告\",\"data\":[310,120,91,134,150,130,210]}]}"
         }
       }
     }
   ],
+  "subCategory": "163859362352604",
+  "componentName": "基础柱状图",
+  "prodVer": "v1.0.3",
+  "devVer": "V1.0.1",
+  "id": "62bd5820ea24a70e97a33ea8",
   "category": "16385412150180",
-  "subCategory": "163858927358702",
-  "devSubCategory": "163876204982300",
+  "devSubCategory": "163858927358702",
   "devCategory": "16385412150180",
-  "componentName": "堆叠折线图",
-  "prodVer": "V1.0.0",
-  "devVer": "V1.0.4",
-  "devId": "61b09cd0f7580b16bb15a62c",
-  "id": "61cd32484a9f67d281d1062f"
+  "devId": "61b0595c27668b16b44fd858",
+  "demoVer": "V1.0.0",
+  "demoId": "61e94c487e514658b2c9a481",
+  "doma:dev:category": "16427348954130",
+  "doma:dev:subCategory": "164299947517405",
+  "doma:dev:ver": "V1.0.1",
+  "doma:dev:id": "61ee40ce13069e675051751a"
 }

@@ -1,5 +1,5 @@
-import * as echarts from 'echarts'
-import { merge } from 'data-vi/helpers'
+import * as echarts from "echarts";
+import { merge } from "data-vi/helpers";
 
 import {
   COLORS,
@@ -16,7 +16,7 @@ import {
   TOOLTIP,
   AXISPOINTER,
   ANIMATION
-} from './theme'
+} from "./theme";
 
 // 这里不加colors的原因是渐变色还不支持
 const textStyle = {
@@ -25,7 +25,6 @@ const textStyle = {
   lineHeight: FONTLINEHEIGHT,
   ...INITFONTSTYLE,
 };
-
 export const initOptions = {
   backgroundColor: BACKGROUNDCOLOR,
   textStyle,
@@ -59,16 +58,18 @@ export const initOptions = {
 };
 
 export const initChart = (dom, options = {}) => {
-	const mergeOptions = merge(
-		{},
-		{
-			color: COLORS,
-		},
+  const mergeOptions = merge(
+    {
+      color: COLORS,
+    },
     initOptions,
-		options
-	)
-	console.log(mergeOptions)
-	const echartsRef = echarts.init(dom, mergeOptions)
+    options
+  );
+  const echartsRef = echarts.init(dom, mergeOptions);
 
-	return echartsRef
-}
+  return echartsRef;
+};
+
+export const registerServices = (callback = () => {}) => {
+  callback(echarts);
+};
