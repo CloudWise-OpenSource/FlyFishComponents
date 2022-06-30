@@ -232,7 +232,7 @@ export const INITFONTSTYLE = {
 };
 
 export const AXISPOINTER = {
-  show: false,
+  show: true,
   type: 'line',
   triggerTooltip: true,
   triggerOn: 'mousemove|click'
@@ -266,10 +266,16 @@ export const TOOLTIP = {
   show: true,
   showContent: true,
   alwaysShowContent: false,
+  axisPointer: {
+    type: "line",
+    axis:'auto',
+    snap: true,
+    show: true, 
+  },
   confine: false,
   enterable: false,
   hideDelay: 100,
-  trigger: Object.keys(TOOLTIPTIGGER)[1],
+  trigger: Object.keys(TOOLTIPTIGGER)[0],
   triggerOn: 'mousemove|click'
 };
 
@@ -304,6 +310,9 @@ export const YAXIS = {
       color: ["#394E6B"],
     },
   },
+  axisPointer: {
+    show: false
+  }
 }
 
 export const FAKEYAXIS = {

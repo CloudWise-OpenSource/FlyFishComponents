@@ -4,7 +4,8 @@
   "description": "",
   "dependencies": {
     "@cloudwise-fe/chart-panel": "1.5.13",
-    "echarts": "^5.2.2"
+    "echarts": "^5.2.2",
+    "antd": "4.16.12"
   },
   "scripts": {
     "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",

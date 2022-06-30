@@ -6,4 +6,4 @@ import { registerComponent } from 'data-vi/components';
 
 import Component from '../src/Component';
 
-registerComponent('61aa27abd39bdf74f6d600b8', 'v-current',  Component);
+registerComponent('61cd32484a9f67d281d1062f', 'v-current',  Component);

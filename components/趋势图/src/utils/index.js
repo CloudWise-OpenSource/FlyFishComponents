@@ -22,8 +22,11 @@ export const checkArrayType = (array) => {
  */
 export const generateSeriesAndLegend = (series) => {
   let formatSeries = {};
+  console.log(series,'seriesseries')
   // 判断是哪种类型, 对应处理数据
   const type = checkArrayType(series);
+  console.log(type,'typetypetypetype')
+
   if (!type) return formatSeries;
 
   formatSeries = {
@@ -61,21 +64,60 @@ export const upperCaseIndentWord = (word) => {
   return wordArray.join('');
 }
 
-export const transferDataSource = (dataSource) => {
+export const transferDataSource = (dataSource,{ classify = 'name', x = 'label', y = 'value' }) => {
+  console.log(dataSource,'dataSourcedataSourcedataSource')
   const isObject = Object.prototype.toString.call(dataSource) === '[object Object]'
   // 默认数组为modal的数据。对象为当前的标准数据模型
   if (!dataSource) {
     return {};
   } else if (Array.isArray(dataSource)) {
-    return dataSource.reduce((entries, item) => {
-      const { data = [], xAxis = [] } = entries;
-      const { x_axis = '', name = '', value = '' } = item;
-      return {
-        data: [...data, { name, data: value.split(',').map(v => parseInt(v.trim())) }],
-        xAxis: x_axis.split(',').map(v => v.trim())
-      }
-    }, {})
+    // let data = [];
+    // dataSource.forEach(item => {
+    //   data.push({name:item.name,data:item.value});
+    // })
+    // return {
+    //   xAxis:dataSource[0].x_axis,
+    //   data:data,
+    // };
+    // return dataSource.reduce((entries, item) => {
+    //   const { data = [], xAxis = [] } = entries;
+    //   const { x_axis = '', name = '', value = '' } = item;
+    //   return {
+    //     data: [...data, { name, data: value.split(',').map(v => parseInt(v.trim())) }],
+    //     xAxis: x_axis.split(',').map(v => v.trim())
+    //   }
+    // }, {})
     // 默认为是数据模型
+    return dataSource.reduce((entries, item) => {
+			let { data = [], xAxis = [] } = entries;
+			const classifyVal = item[classify || 'name'] || "";
+			const xVal = item[x || 'label'];
+			const yVal = item[y || 'value'];
+			let targetIndex = 0;
+			if (xVal) {
+			  targetIndex = xAxis.findIndex((z) => z === xVal);
+			  if (targetIndex === -1) {
+				xAxis = xAxis.concat([xVal]);
+				targetIndex = xAxis.length - 1;
+			  }
+			}
+			let targetDataIndex = data.findIndex((z) => z.name === classifyVal);
+			if (targetDataIndex === -1) {
+			  let newSeries = {
+				name: classifyVal,
+				data: [],
+			  };
+			  newSeries.data[targetIndex] = yVal;
+			  data = data.concat([newSeries]);
+			} else {
+			  data[targetDataIndex].data = data[targetDataIndex].data || [];
+			  data[targetDataIndex].data[targetIndex] = yVal;
+			}
+			return {
+			  data: data,
+			  xAxis: xAxis,
+			};
+		  }, {});
   } else if (isObject) {
     return Array.isArray(dataSource.data) ? dataSource : dataSource.data
   }

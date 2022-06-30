@@ -17,186 +17,186 @@ import {
 import { TOOLTIPTIGGER } from "../constant/tooltip";
 
 export const COLORS = [
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(108, 147, 249, 0.2)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(108, 147, 249, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(83, 243, 255, 0.2)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(83, 243, 255, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(250, 207, 20, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(250, 207, 20, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(227, 109, 111, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(227, 109, 111, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(143, 78, 237, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(143, 78, 237, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(184, 233, 134, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(184, 233, 134, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(96, 183, 255, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(96, 183, 255, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(255, 35, 102, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(255, 35, 102, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(245, 166, 35, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(245, 166, 35, 1)',
-			},
-		],
-		globalCoord: false,
-	},
-	{
-		type: 'linear',
-		x: 0,
-		y: 1,
-		x2: 0,
-		y2: 0,
-		colorStops: [
-			{
-				offset: 0,
-				color: 'rgba(0, 193, 255, 0)',
-			},
-			{
-				offset: 1,
-				color: 'rgba(0, 193, 255, 1)',
-			},
-		],
-		globalCoord: false,
-	},
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 1,
+        color: '#53F3FF',
+      },
+      {
+        offset: 0,
+        color: 'rgba(83, 243, 255, 0)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 1,
+        color: '#5DAFFF',
+      },
+      {
+        offset: 0,
+        color: 'rgba(93, 175, 255, 0)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 1,
+        color: '#6C93F9',
+      },
+      {
+        offset: 0,
+        color: 'rgba(108, 147, 249, 0)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 1,
+        color: 'rgba(184, 142, 255, 1)',
+      },
+      {
+        offset: 0,
+        color: 'rgba(184, 142, 255, 0)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 0,
+        color: 'rgba(143, 78, 237, 0)',
+      },
+      {
+        offset: 1,
+        color: 'rgba(143, 78, 237, 1)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 0,
+        color: 'rgba(184, 233, 134, 0)',
+      },
+      {
+        offset: 1,
+        color: 'rgba(184, 233, 134, 1)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 0,
+        color: 'rgba(96, 183, 255, 0)',
+      },
+      {
+        offset: 1,
+        color: 'rgba(96, 183, 255, 1)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 0,
+        color: 'rgba(255, 35, 102, 0)',
+      },
+      {
+        offset: 1,
+        color: 'rgba(255, 35, 102, 1)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 0,
+        color: 'rgba(245, 166, 35, 0)',
+      },
+      {
+        offset: 1,
+        color: 'rgba(245, 166, 35, 1)',
+      },
+    ],
+    globalCoord: false,
+  },
+  {
+    type: 'linear',
+    x: 0,
+    y: 1,
+    x2: 0,
+    y2: 0,
+    colorStops: [
+      {
+        offset: 0,
+        color: 'rgba(0, 193, 255, 0)',
+      },
+      {
+        offset: 1,
+        color: 'rgba(0, 193, 255, 1)',
+      },
+    ],
+    globalCoord: false,
+  },
 ]
 
 export const BACKGROUNDCOLOR = "#13183000";
@@ -253,13 +253,13 @@ export const RECT = {
 };
 
 export const LEGEND = {
-	show: true,
-	left: 'right',
-	top: '3%',
-	icon: 'circle',
-	itemGap: 15,
-	type: Object.keys(LEGENDTYPE)[0],
-	orient: Object.keys(LEGENDORIENT)[0],
+  show: true,
+  left: '50%',
+  top: '3%',
+  icon: 'circle',
+  itemGap: 15,
+  type: Object.keys(LEGENDTYPE)[0],
+  orient: Object.keys(LEGENDORIENT)[0],
 }
 
 export const TOOLTIP = {
@@ -282,6 +282,11 @@ export const XAXIS = {
   axisLabel: {
     formatter: (value, index) => value,
   },
+  axisLine: {
+    lineStyle: {
+      color: "#394E6B"
+    }
+  }
 }
 
 export const YAXIS = {
@@ -296,8 +301,17 @@ export const YAXIS = {
   splitLine: {
     show: true,
     lineStyle: {
-      color: ["#315070"],
+      color: ["#394E6B"],
     },
+  },
+}
+
+export const FAKEYAXIS = {
+  show: true,
+  nameGap: 15,
+  nameLocation: Object.keys(AXISNAMELOCATIONTYPE)[0],
+  axisLabel: {
+    formatter: (value, index) => value + '%',
   },
 }
 

@@ -6,21 +6,21 @@ import { GRID } from "../Chart/theme";
 import { initOptions } from '../Chart'
 import { formatFunctionsToOption } from "../utils";
 import {
-	Rect,
-	Legend,
-	Tooltip,
-	Axis,
-	Title,
-	AxisPointer,
-	Options,
-	Data,
-	recursionOptions,
-	LineSeries,
+  Rect,
+  Legend,
+  Tooltip,
+  Axis,
+  Title,
+  AxisPointer,
+  Options,
+  Data,
+  recursionOptions,
+  LineSeries,
 } from '@cloudwise-fe/chart-panel'
 
 export default class OptionsSetting extends ComponentOptionsSetting {
   enableLoadCssFile = true;
-  
+
   constructor(props) {
     super(props);
     let options = props.options;
@@ -40,18 +40,18 @@ export default class OptionsSetting extends ComponentOptionsSetting {
     this.updateOptions(finallyOption);
   };
 
-	updateRectOptions = (options) => {
-		const [updateKey] = Object.keys(options)
-		if (
-			!['color', 'backgroundColor'].includes(updateKey) &&
-			!updateKey.startsWith('animation')
-		) {
-			options = {
-				grid: options,
-			}
-		}
-		this.updateOptionsByKey(options)
-	}
+  updateRectOptions = (options) => {
+    const [updateKey] = Object.keys(options)
+    if (
+      !['color', 'backgroundColor'].includes(updateKey) &&
+      !updateKey.startsWith('animation')
+    ) {
+      options = {
+        grid: options,
+      }
+    }
+    this.updateOptionsByKey(options)
+  }
 
   getTabs() {
     const options = merge(
@@ -62,40 +62,41 @@ export default class OptionsSetting extends ComponentOptionsSetting {
     );
     const {
       backgroundColor,
-			animation,
-			animationThreshold,
-			animationDuration,
-			animationDurationUpdate,
-			animationEasing,
-			animationEasingUpdate,
-			animationDelay,
-			animationDelayUpdate,
+      animation,
+      animationThreshold,
+      animationDuration,
+      animationDurationUpdate,
+      animationEasing,
+      animationEasingUpdate,
+      animationDelay,
+      animationDelayUpdate,
       grid = GRID,
       title = {},
       legend = {},
       tooltip = {},
       xAxis = {},
       yAxis = {},
+      fakeYAxis = {},
       color = [],
       series = {},
       axisPointer = {},
       transferXAxisData,
-			transferSeriesData,
+      transferSeriesData,
     } = options;
     const rectValues = {
-			...grid,
-			color,
-			backgroundColor,
-			animation,
-			animationThreshold,
-			animationDuration,
-			animationDurationUpdate,
-			animationEasing,
-			animationEasingUpdate,
-			animationDelay,
-			animationDelayUpdate,
-		}
-    console.log(options)
+      ...grid,
+      color,
+      backgroundColor,
+      animation,
+      animationThreshold,
+      animationDuration,
+      animationDurationUpdate,
+      animationEasing,
+      animationEasingUpdate,
+      animationDelay,
+      animationDelayUpdate,
+    }
+
     return {
       grid: {
         label: "图表区",
@@ -108,105 +109,119 @@ export default class OptionsSetting extends ComponentOptionsSetting {
         ),
       },
       mainTitle: {
-				label: '主标题',
-				content: () => (
-					<Title
-						grid
-						visible
-						align
-						values={title}
-						onChange={(options) => this.updateOptionsByKey(options, 'title')}
-					/>
-				),
-			},
-			subTitle: {
-				label: '副标题',
-				content: () => (
-					<Title
-						keyPrefix="sub"
-						values={title}
-						onChange={(options) => this.updateOptionsByKey(options, 'title')}
-					/>
-				),
-			},
+        label: '主标题',
+        content: () => (
+          <Title
+            grid
+            visible
+            align
+            values={title}
+            onChange={(options) => this.updateOptionsByKey(options, 'title')}
+          />
+        ),
+      },
+      subTitle: {
+        label: '副标题',
+        content: () => (
+          <Title
+            keyPrefix="sub"
+            values={title}
+            onChange={(options) => this.updateOptionsByKey(options, 'title')}
+          />
+        ),
+      },
       legend: {
-				label: '图例',
-				content: () => (
-					<Legend
-						values={legend}
-						onChange={(options) => this.updateOptionsByKey(options, 'legend')}
-					/>
-				),
-			},
-			tooltip: {
-				label: '提示框',
-				content: () => (
-					<Tooltip
-						values={tooltip}
-						onChange={(options) => this.updateOptionsByKey(options, 'tooltip')}
-					/>
-				),
-			},
-			axisPointer: {
-				label: '指示器',
-				content: () => (
-					<AxisPointer
-						values={axisPointer}
-						onChange={(options) =>
-							this.updateOptionsByKey(options, 'axisPointer')
-						}
-					/>
-				),
-			},
+        label: '图例',
+        content: () => (
+          <Legend
+            values={legend}
+            onChange={(options) => this.updateOptionsByKey(options, 'legend')}
+          />
+        ),
+      },
+      tooltip: {
+        label: '提示框',
+        content: () => (
+          <Tooltip
+            values={tooltip}
+            onChange={(options) => this.updateOptionsByKey(options, 'tooltip')}
+          />
+        ),
+      },
+      axisPointer: {
+        label: '指示器',
+        content: () => (
+          <AxisPointer
+            values={axisPointer}
+            onChange={(options) =>
+              this.updateOptionsByKey(options, 'axisPointer')
+            }
+          />
+        ),
+      },
       xAxis: {
-				label: 'X轴',
-				content: () => (
-					<Axis
-						type="x"
-						values={xAxis}
-						onChange={(options) => this.updateOptionsByKey(options, 'xAxis')}
-					/>
-				),
-			},
-			yAxis: {
-				label: 'Y轴',
-				content: () => (
-					<Axis
-						type="y"
-						values={yAxis}
-						onChange={(options) => this.updateOptionsByKey(options, 'yAxis')}
-					/>
-				),
-			},
+        label: 'X轴',
+        content: () => (
+          <Axis
+            type="x"
+            values={xAxis}
+            onChange={(options) => this.updateOptionsByKey(options, 'xAxis')}
+          />
+        ),
+      },
+      yAxis: {
+        label: 'Y轴',
+        content: () => (
+          <Axis
+            type="y"
+            values={yAxis}
+            onChange={(options) => this.updateOptionsByKey(options, 'yAxis')}
+          />
+        ),
+      },
+      fakeYAxis: {
+        label: 'Y轴(右)',
+        content: () => (
+          <Axis
+            type="y"
+            values={fakeYAxis}
+            position={false}
+            other={false}
+            axisLine={false}
+            feedback={false}
+            onChange={(options) => this.updateOptionsByKey(options, 'fakeYAxis')}
+          />
+        ),
+      },
       series: {
-				label: '系列',
-				content: () => (
-					<LineSeries
-						values={series}
-						onChange={(options) => this.updateOptionsByKey(options, 'series')}
-					/>
-				),
-			},
+        label: '系列',
+        content: () => (
+          <LineSeries
+            values={series}
+            onChange={(options) => this.updateOptionsByKey(options, 'series')}
+          />
+        ),
+      },
       extend: {
-				label: '自定义',
-				content: () => (
-					<Options
-						values={options}
-						onChange={(options, allValues, replaceAll = true) => this.updateOptionsByKey({ ...options, replaceAll })}
-					/>
-				),
-			},
-			data: {
-				label: '数据',
-				content: () => (
-					<Data
-						values={{ transferXAxisData, transferSeriesData }}
-						onChange={(options) => {
-							this.updateOptionsByKey(options)
-						}}
-					/>
-				),
-			},
+        label: '自定义',
+        content: () => (
+          <Options
+            values={options}
+            onChange={(options, allValues, replaceAll = true) => this.updateOptionsByKey({ ...options, replaceAll })}
+          />
+        ),
+      },
+      data: {
+        label: '数据',
+        content: () => (
+          <Data
+            values={{ transferXAxisData, transferSeriesData }}
+            onChange={(options) => {
+              this.updateOptionsByKey(options)
+            }}
+          />
+        ),
+      },
     };
   }
 }

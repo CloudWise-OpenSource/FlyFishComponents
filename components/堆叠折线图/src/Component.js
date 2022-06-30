@@ -175,6 +175,9 @@ class FoldLineChart extends Component {
         },
         {
           yAxisIndex: 1,
+          tooltip:{
+            show:false
+          },
           type: 'line',
           data: series,
           symbol: 'none',
@@ -197,7 +200,9 @@ class FoldLineChart extends Component {
           ...propsSeries,
         })),
         ...series.map((v) => ({
-          show: false,
+          tooltip:{
+            show:false
+          },
           yAxisIndex: 1,
           type: 'line',
           symbol: 'none',
