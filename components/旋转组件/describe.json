@@ -1,0 +1,8 @@
+{
+    "compName": "旋转组件",
+    "compType": "public",
+    "contributor": "Kelly.Hao",
+    "description": "组件:可以设置水波球不同等级告警颜色和字体大小",
+    "iconUrl": "thumbnail/icon.png",
+    "publicTime": "2022-06-29"
+}
