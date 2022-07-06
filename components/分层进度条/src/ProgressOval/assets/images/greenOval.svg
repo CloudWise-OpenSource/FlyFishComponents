@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval 2</title>
+    <defs>
+        <circle id="path-1" cx="798" cy="15" r="12"></circle>
+        <filter x="-29.2%" y="-29.2%" width="158.3%" height="158.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.03612645   0 0 0 0 0.358699389   0 0 0 0 0.857904849  0 0 0 0.600968368 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="威马大屏-pepper备份-4" transform="translate(-3170.000000, -2518.000000)">
+            <g id="今日高频缺陷统计" transform="translate(1819.000000, 2246.000000)">
+                <g id="编组-5" transform="translate(40.000000, 170.000000)">
+                    <g id="1备份" transform="translate(0.000000, 80.000000)">
+                        <g id="Oval-2" transform="translate(531.000000, 25.000000)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke-opacity="0.25" stroke="#58F6FF" stroke-width="8" fill="#58F6FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

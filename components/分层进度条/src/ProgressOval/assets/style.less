@@ -1,0 +1,87 @@
+//方便使用定义成了一个变量和在html那边的名字一致
+@prefixCls: ff-components-progressoval-62c5385c761a42178d753b12; 
+
+//变量方便使用
+.@{prefixCls}{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+         -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #23B6FF;
+    }
+    &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: #000E3C;
+    }
+    .check_color{
+        background-color: rgba(0,135,255,0.26);
+    }
+    .upsList {
+        height: 80px;
+        padding: 0 10px 0 10px;
+        margin-bottom: 10px;
+        .ups_progress {
+            .seconedProgress {
+                width:100%;
+                height: 30px;
+                display: flex;
+                line-height: 30px;
+                color: #FFF;
+                .sp_name{
+                    width: 30%;
+                    height: 76px;
+                    font-size: 26px;
+                    line-height: 80px;
+                    padding-left: 8px;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                }
+                >div:nth-child(3){
+                    width:100px;
+                    color: #00FFFF;
+                    font-size: 26px;
+                    line-height: 80px;
+                    margin-left: 25px;
+                }
+                .progressList {
+                    width: 70%;
+                    height: 30px;
+                    
+                    .bar_schedulebg {
+                        position: relative;
+                        height: 30px;
+                        border-radius: 20px;
+                        margin-top: 25px;
+                        margin-left: 10px;
+                        background: rgba(166,240,255,.20);
+                        .bar_scheduleRed {
+                            width:100%;
+                            height: 30px;
+                            border-radius: 20px;
+                            background: rgba(25, 255, 102, 0.6);
+                            background-image: linear-gradient(270deg, #00FFFF 60%, #0095FF 100%);
+                        }
+                        .circle {
+                            position: absolute;
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            margin: -36px 0 0 -20px;
+                            background: url('./images/greenOval.svg')no-repeat center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+ }
+}
