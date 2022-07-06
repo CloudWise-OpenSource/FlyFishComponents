@@ -1,0 +1,8 @@
+{
+    "compName":"动环裂变饼图",
+    "compType": "public",
+    "contributor": "rise.Hao",
+    "description": "组件：可以展示裂变的饼图",
+    "iconUrl": "thumbnail/icon.jpg",
+    "publicTime": "2022-07-06"
+}
