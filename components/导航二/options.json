@@ -31,20 +31,5 @@
         }
       }
     }
-  ],
-  "id": "61aa27acd39bdf74f6d602db",
-  "category": "16385412150180",
-  "subCategory": "1638594460833013",
-  "devSubCategory": "163858927358702",
-  "devCategory": "16385412150180",
-  "componentName": "导航二",
-  "prodVer": "v1.0.1",
-  "devVer": "V1.0.1",
-  "devId": "61b08c6227668b16b44fd8d6",
-  "demoVer": "V1.0.0",
-  "demoId": "61e956e07e514658b2c9a521",
-  "doma:dev:category": "16427348954130",
-  "doma:dev:subCategory": "1642999475174013",
-  "doma:dev:ver": "V1.0.1",
-  "doma:dev:id": "61ee50c7e3dedb6774343ea7"
+  ]
 }
