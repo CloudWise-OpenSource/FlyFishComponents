@@ -64,7 +64,7 @@ export default class Component extends ReactComponent {
   // 默认选项
   static defaultOptions = {
     text: '<div><div class="title">我的第一个参数：${data.title}</div><div class="text" style="color:red;">我的第二个参数：${data.text}</div></div>',
-    isLink: true,
+    isLink: false,
     hrefUrl: '',
     isNewWindow: false,
     color: '#fff',
@@ -73,7 +73,7 @@ export default class Component extends ReactComponent {
     fontWeight: 400,
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    style: '.ff-component-title { border: none; }'
+    style: ''
   };
 
   getDefaultConfig() {
