@@ -78,7 +78,7 @@ export default class OptionsSetting extends ComponentOptionsSetting {
 						</RadioGroup>
 					</FormItem>
 					{options.animationName && (
-						<FormItem full label="动画时长" full>
+						<FormItem full label="动画时长">
 							<InputNumber
 								style={{ width: '100%' }}
 								value={options.animationDuration}
@@ -94,7 +94,6 @@ export default class OptionsSetting extends ComponentOptionsSetting {
 						<FormItem
 							full
 							label="动画次数"
-							full
 							extra="输入-1表示重复循环无限次"
 						>
 							<InputNumber

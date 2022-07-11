@@ -10,33 +10,6 @@
   },
   "events": [],
   "functions": [],
-  "dataSources": [
-    {
-      "name": "model-18",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "getDataField": "data",
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.3.56:8360/openAPI/model/getModelData",
-        "vars": "{\n  \"model_id\": 18\n}",
-        "headers": {
-          "Authorization": "f77ab8f512518ba7f98e5e45782227ab"
-        }
-      }
-    },
-    {
-      "name": "yapi-model-18",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.2.49:3000/mock/358/data/18"
-      }
-    }
-  ],
   "components": [
     {
       "type": "61aa27abd39bdf74f6d60149",
@@ -57,14 +30,5 @@
         }
       }
     }
-  ],
-  "id": "61aa27abd39bdf74f6d60149",
-  "category": "16385412150180",
-  "subCategory": "1638595134844016",
-  "devSubCategory": "163876204982300",
-  "devCategory": "16385412150180",
-  "componentName": "地理地图",
-  "prodVer": "v1.0.0",
-  "devVer": "V1.0.1",
-  "devId": "61b0870ce99031169fa33065"
+  ]
 }
