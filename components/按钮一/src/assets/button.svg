@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="202px" height="38px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 8</title>
-    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-8" transform="translate(2.000000, 1.000000)">
-            <polyline id="Polygon" stroke="#FFCB4D" stroke-width="3" transform="translate(5.086426, 18.102241) rotate(-90.000000) translate(-5.086426, -18.102241) " points="-10.8943363 23.1022413 5.08642578 13.1022413 21.0671879 23.1022413"></polyline>
-            <polyline id="Polygon" stroke="#36A5FF" stroke-width="3" transform="translate(12.086426, 18.102241) rotate(-90.000000) translate(-12.086426, -18.102241) " points="-3.89433633 23.1022413 12.0864258 13.1022413 28.0671879 23.1022413"></polyline>
-            <polygon id="Polygon" fill="#36A5FF" transform="translate(189.913574, 18.102241) rotate(-90.000000) translate(-189.913574, -18.102241) " points="173.932812 18.2750929 189.913574 8.2750929 205.894336 18.2750929 189.913574 27.9293898"></polygon>
-            <polygon id="Polygon-2" stroke="#0062B1" stroke-width="2" transform="translate(100.077451, 18.008975) rotate(-90.000000) translate(-100.077451, -18.008975) " points="100.077451 -67.9820508 117.964947 -56.6547005 117.964947 104 100.077451 93.3273503 82.1899558 104 82.1899558 -56.6547005"></polygon>
-        </g>
-    </g>
-</svg>
+<svg width="202" height="38" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path stroke="#FFCB4D" stroke-width="3" d="m12.086 35.083-10-15.98 10-15.982"/><path stroke="#36A5FF" stroke-width="3" d="m19.086 35.083-10-15.98 10-15.982"/><path fill="#36A5FF" d="m192.086 35.083-10-15.98 10-15.982 9.655 15.981z"/><path stroke="#0062B1" stroke-width="2" d="M16.086 19.009 27.414 1.121h160.654L177.396 19.01l10.672 17.887H27.414z"/></g></svg>

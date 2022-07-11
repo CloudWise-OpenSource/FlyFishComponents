@@ -9,33 +9,6 @@
     "css": ""
   },
   "events": [],
-  "dataSources": [
-    {
-      "name": "model-20",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "getDataField": "data",
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.3.56:8360/openAPI/model/getModelData",
-        "vars": "{\n  \"model_id\": 20\n}",
-        "headers": {
-          "Authorization": "f77ab8f512518ba7f98e5e45782227ab"
-        }
-      }
-    },
-    {
-      "name": "yapi-model-20",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.2.49:3000/mock/358/data/20"
-      }
-    }
-  ],
   "components": [
     {
       "type": "61aa27abd39bdf74f6d60147",

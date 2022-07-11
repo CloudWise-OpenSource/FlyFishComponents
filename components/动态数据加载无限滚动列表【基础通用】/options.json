@@ -16,28 +16,6 @@
       "args": "name"
     }
   ],
-  "dataSources": [
-    {
-      "name": "yapi-model-21",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.2.49:3000/mock/358/data/21"
-      }
-    },
-    {
-      "name": "yapi-model-table",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.2.49:3000/mock/358/data/data-table"
-      }
-    }
-  ],
   "components": [
     {
       "type": "61aa27acd39bdf74f6d60295",
@@ -59,14 +37,5 @@
         }
       }
     }
-  ],
-  "id": "61aa27acd39bdf74f6d60295",
-  "category": "16385412150180",
-  "subCategory": "1638593819821011",
-  "devSubCategory": "163876204982300",
-  "devCategory": "16385412150180",
-  "componentName": "动态数据加载无限滚动列表【基础通用】",
-  "prodVer": "v1.0.6",
-  "devVer": "V1.0.5",
-  "devId": "61b0a0ca7f8cf51699105fc3"
+  ]
 }

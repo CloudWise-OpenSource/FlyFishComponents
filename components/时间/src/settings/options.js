@@ -39,7 +39,7 @@ export default class OptionsSetting extends ComponentOptionsSetting {
 			options: { 
 				finalFormatTime, 
 				style, 
-				...options,
+				...options
 			}, 
 			updateOptions 
 		} = this.props;

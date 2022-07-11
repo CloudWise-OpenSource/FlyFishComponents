@@ -8,33 +8,6 @@
     "backgroundImage": "",
     "css": ""
   },
-  "dataSources": [
-    {
-      "name": "model-23",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "getDataField": "data",
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.3.56:8360/openAPI/model/getModelData",
-        "vars": "{\n  \"model_id\": 23\n}",
-        "headers": {
-          "Authorization": "author token"
-        }
-      }
-    },
-    {
-      "name": "yapi-model-23",
-      "type": "http",
-      "options": {
-        "apiSuccessCode": 0,
-        "interval": 0,
-        "method": "GET",
-        "url": "http://10.2.2.49:3000/mock/358/data/23"
-      }
-    }
-  ],
   "events": [],
   "functions": [],
   "components": [
@@ -57,14 +30,5 @@
         }
       }
     }
-  ],
-  "category": "16385412150180",
-  "subCategory": "163858927358702",
-  "devSubCategory": "163876204982300",
-  "devCategory": "16385412150180",
-  "componentName": "正负柱状图",
-  "prodVer": "V1.0.1",
-  "devVer": "V1.0.4",
-  "devId": "61b08cf49e604116c6898e6e",
-  "id": "626b4131e6dcf01bc1ff6fad"
+  ]
 }
