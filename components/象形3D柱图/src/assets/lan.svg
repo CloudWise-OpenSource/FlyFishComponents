@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="100px" viewBox="0 0 16 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>蓝</title>
+    <defs>
+        <linearGradient x1="53.3458054%" y1="89.6079799%" x2="53.3458054%" y2="-3.11001461%" id="linearGradient-1">
+            <stop stop-color="#01C4FB" stop-opacity="0.699615036" offset="0%"></stop>
+            <stop stop-color="#43A4FF" stop-opacity="0.8" offset="36.9427448%"></stop>
+            <stop stop-color="#00FFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.1018376%" y1="103.574678%" x2="53.1018376%" y2="14.6089751%" id="linearGradient-2">
+            <stop stop-color="#26E0F3" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#0175E2" offset="49.3406792%"></stop>
+            <stop stop-color="#00FFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="武商集团系统监控大屏" transform="translate(-184.000000, -576.000000)">
+            <g id="内容" transform="translate(38.000000, 105.000000)">
+                <g id="告警设备分类统计" transform="translate(0.000000, 292.000000)">
+                    <g id="2" transform="translate(1.000000, 51.000000)">
+                        <g id="趋势" transform="translate(19.000000, 16.000000)">
+                            <g id="柱" transform="translate(50.000000, 68.000000)">
+                                <g id="蓝" transform="translate(76.000000, 44.000000)">
+                                    <polygon id="矩形" fill="#00FFDF" opacity="0.399181548" points="8 94.0372671 16 97.0186335 8 100 0 97.0186335"></polygon>
+                                    <polygon id="矩形" fill="#33FFFF" points="8 -1.32399268e-15 16 2.98136646 8 5.96273292 0 2.98136646"></polygon>
+                                    <polygon id="Rectangle-22" fill="url(#linearGradient-1)" points="0 2.98136646 8 5.96273292 8 100 0 97.0186335"></polygon>
+                                    <polygon id="Rectangle-22" fill="url(#linearGradient-2)" opacity="0.75999999" transform="translate(12.000000, 51.490683) scale(-1, 1) translate(-12.000000, -51.490683) " points="8 2.98136646 16 5.96273292 16 100 8 97.0186335"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

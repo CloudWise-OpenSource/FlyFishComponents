@@ -1,0 +1,26 @@
+
+//   .upload-image{
+//     .upload-image-actions{
+//       .anticon svg{
+//         display: none !important;
+//       }
+//     } 
+//   }
+// }
+
+// 覆盖panel reset.less
+.component-settings .tab-pane .component-settings-wrapper {
+  
+    .pictorial3DBarChart {
+        .upload-image{
+          .anticon {
+            &::before {
+              display: inline-block !important;
+            }
+            svg {
+              display: none !important;
+            }
+          }
+      }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "象形3D柱图",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "components": [
+    {
+      "type": "61cd7a50d1857fd23c9c8bc9",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "name": "象形3D柱图",
+        "left": 534,
+        "top": 200,
+        "width": 800,
+        "height": 700,
+        "index": 0
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"data\":{\"xAxis\":[\"SSD1004\",\"SAS2007\",\"SSD1007\",\"SSD1008\",\"SSD1009\",\"SSD1010\"],\"data\":[{\"data\":[{\"value\":557},{\"value\":658},{\"value\":705},{\"value\":708},{\"value\":710},{\"value\":720}],\"name\":\"剩余磁盘\"}]}}"
+        }
+      }
+    }
+  ],
+  "category": "16385412150180",
+  "subCategory": "163858927358702",
+  "devSubCategory": "163858927358702",
+  "devCategory": "16385412150180",
+  "prodVer": "V1.0.2",
+  "devVer": "V1.0.1",
+  "componentName": "象形3D柱图",
+  "devId": "61bbf7d930c5aa42002924a2",
+  "id": "61cd7a50d1857fd23c9c8bc9",
+  "demoVer": "V1.0.0",
+  "demoId": "61e95aba7e514658b2c9a552",
+  "doma:dev:category": "16427348954130",
+  "doma:dev:subCategory": "164299947517403",
+  "doma:dev:ver": "V1.0.1",
+  "doma:dev:id": "61ee54b1aecbfd671a12d285"
+}
