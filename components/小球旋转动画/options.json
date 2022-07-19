@@ -1,0 +1,36 @@
+{
+    "options": {
+        "width": 1920,
+        "height": 1080,
+        "name": "本地测试大屏",
+        "scaleMode": "width",
+        "backgroundColor": "#162C51",
+        "backgroundImage": "",
+        "css": ""
+    },
+    "events": [
+    ],
+    "functions": [
+        {
+            "name": "sayHello",
+            "body": "console.log('hello '+name)",
+            "args": "name"
+        }
+    ],
+    "components": [
+        {
+            "type": "62d60a64ae3be617a2a61ad3",
+            "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+            "config": {
+                "left": 534,
+                "top": 242,
+                "width": 1100,
+                "height": 800,
+                "index": 0,
+                "name": "小球旋转动画",
+                "visible": true,
+                "class": ""
+            }
+        }
+    ]
+}
