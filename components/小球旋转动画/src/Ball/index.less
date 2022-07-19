@@ -1,0 +1,64 @@
+
+.box {
+  width: 90%;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+.ball {
+  width: 10%;
+  padding-top: 10%;
+  background-image: url('./images/middle_img_v2_9dba7568-d9af-4b09-afe6-d702c766e03g.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  .name{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    // transform:rotateZ(-10deg) ;
+}
+}
+//7个圆,x和y轴动画加起来是20s , 20s/7 约等于 2.857s
+//每个球y轴动画延迟 从0递减2.857s,x轴与y相差动画时长的一半（10s/2）
+
+ //7个圆,x和y轴动画加起来是20s , 20s/7 约等于 2.857s
+//每个球y轴动画延迟 从0递减2.857s,x轴与y相差动画时长的一半（10s/2）
+ 
+@keyframes animX {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+@keyframes animY {
+  0% {
+    top: 25%;
+  }
+  50% {
+    top: 55%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+
+
+}
