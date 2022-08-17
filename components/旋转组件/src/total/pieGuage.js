@@ -3,29 +3,33 @@ import './index.less';
 import 'echarts-liquidfill';
 import ReactEcharts from 'echarts-for-react';
 
-var size = 450, arice = 141; // 中心圆宽高
+// var size = 450, arice = 141; // 中心圆宽高
 export default class PieGuage extends React.Component {
   constructor(props) {
     super(props);
+    const {pieSize} = this.props.parent.getConfig()
     this.state = {
-      width: size, // 中心圆宽高
+      width: pieSize.width, // 中心圆宽高
       widthParent: props.parent.config.width, // 记录父级
-      echartsArice: arice // 中心水波球宽高
+      echartsArice: pieSize.arice // 中心水波球宽高
     }
   }
   componentDidMount() {
     const { parent } = this.props
-
+    const {pieSize} = this.props.parent.getConfig()
     parent && parent.bind('resized', ({ width, height }) => {
       const { widthParent, echartsArice } = this.state
       const scale = width / widthParent;
-      const data = this.state.width * scale / size; // 向父级传递缩放
+      const data = this.state.width * scale / pieSize.width; // 向父级传递缩放
       // 改变此组件子级父级宽高
+      const a = this.state.width * scale
       this.setState({
-        width: this.state.width * scale,
+        width: a,
         widthParent: width,
         echartsArice: echartsArice * scale
       })
+      this.props.parent.config.pieSize = {width: a, arice: echartsArice * scale}
+      this.props.parent._render()
       // 传递父级组件缩放比例
       this.props.setChildDate(data)
     });
@@ -45,8 +49,8 @@ export default class PieGuage extends React.Component {
     return color
   }
   render() {
-    const { echartsArice, width, height } = this.state
-    let { num = 0.5, fontSize, alarmColor } = this.props;
+    const { echartsArice, width } = this.state
+    let { num = 0.5, fontSize} = this.props;
     if (num > 1) num = 1;
     if (num < 0) num = 0;
     let option = {
@@ -77,7 +81,7 @@ export default class PieGuage extends React.Component {
         },
       ],
     };
-
+    
     return (
       <div style={{ width: width, height: width }} className={'centerBall'}>
         <div style={{ width: width, height: width }} />

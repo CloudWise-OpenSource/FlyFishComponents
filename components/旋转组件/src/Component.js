@@ -10,11 +10,21 @@ export default class CenterBall extends ReactComponent {
       height: 580,
       visible: true,
       name: '旋转组件',
+      pieSize: {width: 450, arice: 141},
+      arr: [
+        { top: 28, left: 78, width: 112, type: 'leftTop' },
+        { top: 28, right: 70, width: 112, type: 'rightTop' },
+        { top: 398, left: 72, width: 112, type: 'leftBottom' },
+        { top: 398, right: 70, width: 112, type: 'rightBottom' }
+      ],
+      preTop: 72
     };
   }
 
     // 默认配置
-    static defaultConfig = {};
+    static defaultConfig = {
+     
+    };
     // 默认选项
     static defaultOptions = {
       smallFontSize: 30,
@@ -65,7 +75,6 @@ export default class CenterBall extends ReactComponent {
             call(onSuccess, this, data);
             let opt = this.getOptions()
             const { alarmColor } = opt;
-            console.log(data, opt)
             // const newAlarmColor = data.map((item, index) => alarmColor[index]);
             // 数据加载完成事件
             this.trigger('loaded', data);
