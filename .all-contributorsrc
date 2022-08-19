@@ -58,6 +58,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "YouYe",
+      "name": "Cary Zhou",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17558799?v=4",
+      "profile": "https://github.com/YouYe",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
