@@ -1,4 +1,7 @@
 ## 飞鱼(FlyFish)组件及模板库
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ##### FlyFishComponents 是数据可视化编排平台 FlyFish 的组件模版中心，这里存放在目前 FlyFish 所有开源组件，欢迎广大开发者踊提交 PR，贡献新的组件。您所贡献的每一行代码都将鼓舞每一位 FlyFish 核心开发者，这是我们持续开源的动力。
 
@@ -121,3 +124,23 @@ zip -q -r ${组件文件夹名称}.zip ${组件文件夹名称}
 ```bash
 应用创建 -> 组件开发 -> 创建一个组件 -> 操作选项 -> 导入源码 -> 开发组件 -> 安装依赖 -> 更新上线
 ```
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/laocong"><img src="https://avatars.githubusercontent.com/u/43259965?v=4?s=100" width="100px;" alt=""/><br /><sub><b>郝少聪</b></sub></a><br /><a href="https://github.com/CloudWise-OpenSource/FlyFishComponents/commits?author=laocong" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
