@@ -1,6 +1,6 @@
 ## 飞鱼(FlyFish)组件及模板库
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ##### FlyFishComponents 是数据可视化编排平台 FlyFish 的组件模版中心，这里存放在目前 FlyFish 所有开源组件，欢迎广大开发者踊提交 PR，贡献新的组件。您所贡献的每一行代码都将鼓舞每一位 FlyFish 核心开发者，这是我们持续开源的动力。
@@ -141,6 +141,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/jincheny"><img src="https://avatars.githubusercontent.com/u/54785820?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jincheny</b></sub></a><br /><a href="https://github.com/CloudWise-OpenSource/FlyFishComponents/commits?author=jincheny" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/maxDwq"><img src="https://avatars.githubusercontent.com/u/36149790?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dwq</b></sub></a><br /><a href="https://github.com/CloudWise-OpenSource/FlyFishComponents/commits?author=maxDwq" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/YouYe"><img src="https://avatars.githubusercontent.com/u/17558799?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cary Zhou</b></sub></a><br /><a href="#maintenance-YouYe" title="Maintenance">🚧</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://blog.csdn.net/xiaohu12685"><img src="https://avatars.githubusercontent.com/u/30620913?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tiger wang</b></sub></a><br /><a href="#question-xiaohu12685" title="Answering Questions">💬</a></td>
   </tr>
 </table>
 
