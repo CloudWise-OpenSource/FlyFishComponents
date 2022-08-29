@@ -1,0 +1,76 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "地理地图",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "dataSources": [
+    {
+      "name": "model-18",
+      "type": "http",
+      "options": {
+        "apiSuccessCode": 0,
+        "getDataField": "data",
+        "interval": 0,
+        "method": "GET",
+        "url": "http://10.2.3.56:8360/openAPI/model/getModelData",
+        "vars": "{\n  \"model_id\": 18\n}",
+        "headers": {
+          "Authorization": "f77ab8f512518ba7f98e5e45782227ab"
+        }
+      }
+    },
+    {
+      "name": "yapi-model-18",
+      "type": "http",
+      "options": {
+        "apiSuccessCode": 0,
+        "interval": 0,
+        "method": "GET",
+        "url": "http://10.2.2.49:3000/mock/358/data/18"
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "61aa27abd39bdf74f6d60149",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 200,
+        "width": 800,
+        "height": 700,
+        "name": "地理地图",
+        "index": 0
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"data\":[{\"value\":20,\"name\":\"北京\"},{\"value\":60,\"name\":\"包头\"},{\"value\":100,\"name\":\"长春\"},{\"value\":20,\"name\":\"大连\"},{\"value\":80,\"name\":\"上海\"},{\"value\":70,\"name\":\"南昌\"},{\"value\":40,\"name\":\"重庆\"},{\"value\":30,\"name\":\"南宁\"},{\"value\":10,\"name\":\"广州\"},{\"value\":40,\"name\":\"拉萨\"}]}"
+        }
+      }
+    }
+  ],
+  "id": "61aa27abd39bdf74f6d60149",
+  "category": "16385412150180",
+  "subCategory": "1638595134844016",
+  "devSubCategory": "163858927358702",
+  "devCategory": "16385412150180",
+  "componentName": "地理地图",
+  "prodVer": "v1.0.1",
+  "devVer": "V1.0.1",
+  "devId": "61b0870ce99031169fa33065",
+  "demoVer": "V1.0.0",
+  "demoId": "61e95456d7e4a058de605ef3",
+  "doma:dev:category": "16427348954130",
+  "doma:dev:subCategory": "1642999475174017",
+  "doma:dev:ver": "V1.0.1",
+  "doma:dev:id": "61ee4e8de3dedb6774343e9a"
+}
