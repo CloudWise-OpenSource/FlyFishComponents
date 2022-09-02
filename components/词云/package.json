@@ -1,0 +1,15 @@
+{
+  "name": "622f0093c4330f172d61cc42",
+  "version": "v1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "echarts": "5.3.1",
+    "echarts-for-react": "3.0.2",
+    "echarts-wordcloud": "2.0.0"
+  },
+  "scripts": {
+    "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",
+    "build-production": "NODE_ENV=production ../../node_modules/.bin/webpack --config ./build/webpack.config.production.js"
+  }
+}
