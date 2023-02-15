@@ -1,0 +1,41 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "本地测试大屏",
+    "scaleMode": "origin",
+    "backgroundColor": "#162C51",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [
+    {
+      "name": "sayHello",
+      "body": "console.log('hello '+name)",
+      "args": "name"
+    }
+  ],
+  "components": [
+    {
+      "type": "${ComponentIdTpl}",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 242,
+        "width": 883,
+        "height": 645,
+        "index": 0,
+        "name": "动态数据加载无限滚动列表【基础通用】",
+        "visible": true,
+        "class": ""
+      },
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"columns\":[{\"title\":\"名称\",\"dataIndex\":\"title\",\"key\":\"title\",\"width\":\"30%\"},{\"title\":\"数值\",\"dataIndex\":\"number\",\"key\":\"number\",\"width\":\"30%\"},{\"title\":\"状态\",\"dataIndex\":\"status\",\"key\":\"status\",\"width\":\"30%\"}],\"dataSource\": [{\"title\":\"标题-0\",\"number\":\"数值-0\",\"status\":\"状态-0\"},{\"title\":\"标题-1\",\"number\":\"数值-1\",\"status\":\"状态-1\"},{\"title\":\"标题-2\",\"number\":\"数值-2\",\"status\":\"状态-2\"},{\"title\":\"标题-3\",\"number\":\"数值-3\",\"status\":\"状态-3\"},{\"title\":\"标题-4\",\"number\":\"数值-4\",\"status\":\"状态-4\"},{\"title\":\"标题-5\",\"number\":\"数值-5\",\"status\":\"状态-5\"},{\"title\":\"标题-6\",\"number\":\"数值-6\",\"status\":\"状态-6\"},{\"title\":\"标题-7\",\"number\":\"数值-7\",\"status\":\"状态-7\"},{\"title\":\"标题-8\",\"number\":\"数值-8\",\"status\":\"状态-8\"},{\"title\":\"标题-9\",\"number\":\"数值-9\",\"status\":\"状态-9\"},{\"title\":\"标题-10\",\"number\":\"数值-10\",\"status\":\"状态-10\"},{\"title\":\"标题-11\",\"number\":\"数值-11\",\"status\":\"状态-11\"},{\"title\":\"标题-12\",\"number\":\"数值-12\",\"status\":\"状态-12\"},{\"title\":\"标题-13\",\"number\":\"数值-13\",\"status\":\"状态-13\"},{\"title\":\"标题-14\",\"number\":\"数值-14\",\"status\":\"状态-14\"},{\"title\":\"标题-15\",\"number\":\"数值-15\",\"status\":\"状态-15\"},{\"title\":\"标题-16\",\"number\":\"数值-16\",\"status\":\"状态-16\"},{\"title\":\"标题-17\",\"number\":\"数值-17\",\"status\":\"状态-17\"},{\"title\":\"标题-18\",\"number\":\"数值-18\",\"status\":\"状态-18\"},{\"title\":\"标题-19\",\"number\":\"数值-19\",\"status\":\"状态-19\"}]}"
+        }
+      }
+    }
+  ]
+}

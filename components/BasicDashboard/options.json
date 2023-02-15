@@ -1,0 +1,34 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "仪表盘",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "components": [
+    {
+      "type": "${ComponentIdTpl}",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 200,
+        "width": 800,
+        "height": 700,
+        "name": "基础仪表盘",
+        "index": 0
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"data\":[{\"value\":91,\"name\":\"内存使用率\"}]}"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "本地测试大屏",
+    "scaleMode": "origin",
+    "backgroundColor": "#162C51",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "components": [
+    {
+      "type": "${ComponentIdTpl}",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 242,
+        "width": 500,
+        "height": 500,
+        "index": 0,
+        "name": "基础水波球",
+        "visible": true,
+        "class": ""
+      },
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"value\":75,\"name\":\"消费水平\"}"
+        }
+      },
+      "options": {}
+    }
+  ],
+  "id": "61aa27abd39bdf74f6d60147",
+  "category": "16385412150180",
+  "subCategory": "1638594664015016",
+  "devSubCategory": "163876204982300",
+  "devCategory": "16385412150180",
+  "componentName": "基础水波球",
+  "prodVer": "v1.0.3",
+  "devVer": "V1.0.3",
+  "devId": "61b0a190ce01fd16a6bc857e"
+}

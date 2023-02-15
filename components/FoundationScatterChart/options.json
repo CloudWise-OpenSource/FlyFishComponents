@@ -1,0 +1,43 @@
+{
+  "options": {
+    "width": 1920,
+    "height": 1080,
+    "name": "散点图",
+    "scaleMode": "origin",
+    "backgroundColor": "#0B1427",
+    "backgroundImage": "",
+    "css": ""
+  },
+  "events": [],
+  "functions": [],
+  "components": [
+    {
+      "type": "${ComponentIdTpl}",
+      "id": "UBKO-08U1-C9L4-6OJF-3OMB-3OFN",
+      "config": {
+        "left": 534,
+        "top": 200,
+        "width": 1000,
+        "height": 700,
+        "name": "基础散点图",
+        "index": 0
+      },
+      "options": {},
+      "dataSource": {
+        "type": "json",
+        "options": {
+          "json": "{\"xAxis\":[\"10\",\"20\",\"30\",\"40\",\"50\",\"60\",\"70\",\"80\",\"90\",\"100\",\"110\"],\"data\":[{\"name\":\"降水量\",\"data\":[92,83,82,23,81,32,54,23,42,32,53]},{\"name\":\"降雨量\",\"data\":[12,43,81,43,51,22,64,53,22,12,33]}]}"
+        }
+      }
+    }
+  ],
+  "id": "61aa27abd39bdf74f6d600c6",
+  "category": "16385412150180",
+  "subCategory": "1638594563294014",
+  "devSubCategory": "163876204982300",
+  "devCategory": "16385412150180",
+  "componentName": "基础散点图",
+  "prodVer": "v1.0.0",
+  "devVer": "V1.0.1",
+  "devId": "61b09a5f9e604116c6898e8b"
+}
