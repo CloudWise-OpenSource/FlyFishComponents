@@ -49,15 +49,15 @@ Component1 // 组件名称目录
 
 #### 部署 FlyFish
 
-在开发组件前，您需要先部署 FlyFish，目前最新版本为 2.1，您可以切换到 FlyFish2.1 分支，下载相关代码并部署，FlyFish 代码仓库如下所示
+在开发组件前，您需要先部署 FlyFish，目前最新版本为 3.0，您可以切换到 master 分支，下载相关代码并部署，FlyFish 代码仓库如下所示
 
 - https://github.com/CloudWise-OpenSource/FlyFish
 - https://gitee.com/Cloudwise/fly-fish
 
 #### 部署流程：
 
-- [FlyFish2.1 部署文档 GitHub](https://github.com/CloudWise-OpenSource/FlyFish/tree/main/doc)
-- [FlyFish2.1 部署文档 Gitee](https://gitee.com/CloudWise/fly-fish/tree/main/doc)
+- [FlyFish3.0 部署文档 GitHub](https://github.com/CloudWise-OpenSource/FlyFish/tree/master/doc)
+- [FlyFish3.0 部署文档 Gitee](https://gitee.com/CloudWise/fly-fish/tree/master/doc)
 
 ### 组件开发规范
 
