@@ -59,6 +59,10 @@ Component1 // 组件名称目录
 - [FlyFish3.0 部署文档 GitHub](https://github.com/CloudWise-OpenSource/FlyFish/tree/master/doc)
 - [FlyFish3.0 部署文档 Gitee](https://gitee.com/CloudWise/fly-fish/tree/master/doc)
 
+### 组件源码导入
+
+components文件夹任意组件下同名zip包下载后，可直接到FlyFish组件列表中导入源码。
+
 ### 组件开发规范
 
 组件开发规范文档可以帮助您在进行组件开发过程中减少一些常见错误，在您正式开发组件前，请一定要阅读此文档。
