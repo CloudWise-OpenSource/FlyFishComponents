@@ -1,0 +1,24 @@
+{
+  "name": "689263552744132608",
+  "version": "v1.0.0",
+  "description": "",
+  "dependencies": {
+    "mapbox-gl": "^2.14.1",
+    "@cloudwise-fe/chart-panel": "1.5.13",
+    "antd": "^4.20.2",
+    "deck.gl": "8.2.0",
+    "@loaders.gl/gltf": "2.3.13",
+    "@loaders.gl/core": "2.3.13",
+    "@deck.gl/mesh-layers": "8.2.0",
+    "@deck.gl/layers": "8.2.0",
+    "geojson-validation": "^1.0.2",
+    "lodash-es": "^4.17.21",
+    "mapbox-gl-controls": "^2.3.5",
+    "react-map-gl": "6.1.21"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-dev": "NODE_ENV=dev ../../node_modules/.bin/webpack --config ./build/webpack.config.dev.js",
+    "build-production": "NODE_ENV=production ../../node_modules/.bin/webpack --config ./build/webpack.config.production.js"
+  }
+}
